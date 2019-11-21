@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Salesplank
@@ -8,6 +9,8 @@ namespace Salesplank
         public mainForm()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width - 5, Height - 5, 10, 10));
             lblSelected.Text = "Bem-vindo";
             lblColorContracts.Visible = false;
             lblColorProposals.Visible = false;
@@ -32,5 +35,16 @@ namespace Salesplank
             proposalUserControl.Visible = false;
             contractUserControl.Visible = true;
         }
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect, // x-coordinate of upper-left corner
+            int nTopRect, // y-coordinate of upper-left corner
+            int nRightRect, // x-coordinate of lower-right corner
+            int nBottomRect, // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
     }
 }

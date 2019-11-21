@@ -1,4 +1,6 @@
-﻿namespace Salesplank
+﻿using System.Windows.Forms;
+
+namespace Salesplank
 {
     partial class mainForm
     {
@@ -58,7 +60,7 @@
             this.panelLeftSide.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeftSide.Location = new System.Drawing.Point(0, 0);
             this.panelLeftSide.Name = "panelLeftSide";
-            this.panelLeftSide.Size = new System.Drawing.Size(160, 341);
+            this.panelLeftSide.Size = new System.Drawing.Size(160, 522);
             this.panelLeftSide.TabIndex = 0;
             // 
             // lblColorContracts
@@ -185,27 +187,26 @@
             // 
             // contractUserControl
             // 
-            this.contractUserControl.Location = new System.Drawing.Point(160, 161);
-            this.contractUserControl.MaximumSize = new System.Drawing.Size(662, 177);
+            this.contractUserControl.Location = new System.Drawing.Point(160, 143);
             this.contractUserControl.MinimumSize = new System.Drawing.Size(662, 177);
             this.contractUserControl.Name = "contractUserControl";
-            this.contractUserControl.Size = new System.Drawing.Size(662, 177);
+            this.contractUserControl.Size = new System.Drawing.Size(662, 379);
             this.contractUserControl.TabIndex = 7;
             // 
             // proposalUserControl
             // 
             this.proposalUserControl.Location = new System.Drawing.Point(160, 161);
-            this.proposalUserControl.MaximumSize = new System.Drawing.Size(662, 177);
+            this.proposalUserControl.Margin = new System.Windows.Forms.Padding(10);
             this.proposalUserControl.MinimumSize = new System.Drawing.Size(662, 177);
             this.proposalUserControl.Name = "proposalUserControl";
-            this.proposalUserControl.Size = new System.Drawing.Size(662, 177);
+            this.proposalUserControl.Size = new System.Drawing.Size(662, 361);
             this.proposalUserControl.TabIndex = 5;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 341);
+            this.ClientSize = new System.Drawing.Size(822, 522);
             this.Controls.Add(this.contractUserControl);
             this.Controls.Add(this.lblSelected);
             this.Controls.Add(this.proposalUserControl);
