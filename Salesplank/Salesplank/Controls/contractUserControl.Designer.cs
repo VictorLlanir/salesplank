@@ -1,6 +1,6 @@
 ﻿namespace Salesplank.Controls
 {
-    partial class propostaUserControl
+    partial class contractUserControl
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -28,18 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnGerarContrato = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // propostaUserControl
+            // btnGerarContrato
+            // 
+            this.btnGerarContrato.Location = new System.Drawing.Point(546, 326);
+            this.btnGerarContrato.Name = "btnGerarContrato";
+            this.btnGerarContrato.Size = new System.Drawing.Size(113, 23);
+            this.btnGerarContrato.TabIndex = 0;
+            this.btnGerarContrato.Text = "Gerar contrato";
+            this.btnGerarContrato.UseVisualStyleBackColor = true;
+            // 
+            // contratoUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "propostaUserControl";
-            this.Size = new System.Drawing.Size(677, 386);
+            this.Controls.Add(this.btnGerarContrato);
+            this.MaximumSize = new System.Drawing.Size(662, 352);
+            this.MinimumSize = new System.Drawing.Size(662, 352);
+            this.Name = "contratoUserControl";
+            this.Size = new System.Drawing.Size(662, 352);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnGerarContrato;
     }
 }

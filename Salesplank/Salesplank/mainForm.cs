@@ -8,20 +8,29 @@ namespace Salesplank
         public mainForm()
         {
             InitializeComponent();
-            lblColorContratos.Visible = false;
+            lblSelected.Text = "Bem-vindo";
+            lblColorContracts.Visible = false;
+            lblColorProposals.Visible = false;
+            proposalUserControl.Visible = false;
+            contractUserControl.Visible = false;
         }
-
-        private void btnFecharSup_Click(object sender, EventArgs e) => Close();
-        private void btnFechar_Click(object sender, EventArgs e) => Close();
-        private void btnPropostas_Click(object sender, EventArgs e)
+        private void btnCloseSup_Click(object sender, EventArgs e) => Close();
+        private void btnClose_Click(object sender, EventArgs e) => Close();
+        private void btnProposals_Click(object sender, EventArgs e)
         {
-            lblColorContratos.Visible = false;
-            lblColorPropostas.Visible = true;
+            lblSelected.Text = "Propostas";
+            lblColorContracts.Visible = false;
+            lblColorProposals.Visible = true;
+            contractUserControl.Visible = false;
+            proposalUserControl.Visible = true;
         }
-        private void btnContratos_Click(object sender, EventArgs e)
+        private void btnContracts_Click(object sender, EventArgs e)
         {
-            lblColorPropostas.Visible = false;
-            lblColorContratos.Visible = true;
+            lblSelected.Text = "Contratos";
+            lblColorProposals.Visible = false;
+            lblColorContracts.Visible = true;
+            proposalUserControl.Visible = false;
+            contractUserControl.Visible = true;
         }
     }
 }
