@@ -44,27 +44,44 @@
             this.rdbBrainInteractivity = new System.Windows.Forms.RadioButton();
             this.rdbSab = new System.Windows.Forms.RadioButton();
             this.btnSelectSponsorLogo = new System.Windows.Forms.Button();
+            this.gpbActions = new System.Windows.Forms.GroupBox();
+            this.lblBrainBranding = new System.Windows.Forms.Label();
+            this.lblBrainRelationship = new System.Windows.Forms.Label();
+            this.lblBrainContent = new System.Windows.Forms.Label();
+            this.clbActionsBranding = new System.Windows.Forms.CheckedListBox();
+            this.clbActionsRelationship = new System.Windows.Forms.CheckedListBox();
+            this.clbActionsContent = new System.Windows.Forms.CheckedListBox();
             this.gpbInitialData.SuspendLayout();
+            this.gpbActions.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGerarProposta
             // 
+            this.btnGerarProposta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGerarProposta.FlatAppearance.BorderSize = 0;
             this.btnGerarProposta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGerarProposta.Location = new System.Drawing.Point(13, 304);
+            this.btnGerarProposta.Font = new System.Drawing.Font("Effra Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerarProposta.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGerarProposta.Location = new System.Drawing.Point(13, 308);
             this.btnGerarProposta.Name = "btnGerarProposta";
-            this.btnGerarProposta.Size = new System.Drawing.Size(125, 29);
+            this.btnGerarProposta.Size = new System.Drawing.Size(125, 30);
             this.btnGerarProposta.TabIndex = 1;
             this.btnGerarProposta.Text = "Gerar proposta";
-            this.btnGerarProposta.UseVisualStyleBackColor = true;
+            this.btnGerarProposta.UseVisualStyleBackColor = false;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(194, 304);
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Effra Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnClear.Location = new System.Drawing.Point(194, 308);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(125, 29);
             this.btnClear.TabIndex = 4;
             this.btnClear.Text = "Limpar";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // gpbInitialData
@@ -221,19 +238,90 @@
             this.btnSelectSponsorLogo.Text = "Selecionar logo do patrocinador";
             this.btnSelectSponsorLogo.UseVisualStyleBackColor = true;
             // 
+            // gpbActions
+            // 
+            this.gpbActions.Controls.Add(this.lblBrainBranding);
+            this.gpbActions.Controls.Add(this.lblBrainRelationship);
+            this.gpbActions.Controls.Add(this.lblBrainContent);
+            this.gpbActions.Controls.Add(this.clbActionsBranding);
+            this.gpbActions.Controls.Add(this.clbActionsRelationship);
+            this.gpbActions.Controls.Add(this.clbActionsContent);
+            this.gpbActions.Font = new System.Drawing.Font("Effra", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbActions.Location = new System.Drawing.Point(326, 13);
+            this.gpbActions.Name = "gpbActions";
+            this.gpbActions.Size = new System.Drawing.Size(321, 325);
+            this.gpbActions.TabIndex = 5;
+            this.gpbActions.TabStop = false;
+            this.gpbActions.Text = "Cotas";
+            // 
+            // lblBrainBranding
+            // 
+            this.lblBrainBranding.AutoSize = true;
+            this.lblBrainBranding.Location = new System.Drawing.Point(10, 172);
+            this.lblBrainBranding.Name = "lblBrainBranding";
+            this.lblBrainBranding.Size = new System.Drawing.Size(46, 12);
+            this.lblBrainBranding.TabIndex = 1;
+            this.lblBrainBranding.Text = "Branding";
+            // 
+            // lblBrainRelationship
+            // 
+            this.lblBrainRelationship.AutoSize = true;
+            this.lblBrainRelationship.Location = new System.Drawing.Point(165, 22);
+            this.lblBrainRelationship.Name = "lblBrainRelationship";
+            this.lblBrainRelationship.Size = new System.Drawing.Size(79, 12);
+            this.lblBrainRelationship.TabIndex = 1;
+            this.lblBrainRelationship.Text = "Relacionamento";
+            // 
+            // lblBrainContent
+            // 
+            this.lblBrainContent.AutoSize = true;
+            this.lblBrainContent.Location = new System.Drawing.Point(10, 22);
+            this.lblBrainContent.Name = "lblBrainContent";
+            this.lblBrainContent.Size = new System.Drawing.Size(52, 12);
+            this.lblBrainContent.TabIndex = 1;
+            this.lblBrainContent.Text = "Conteúdo";
+            // 
+            // clbActionsBranding
+            // 
+            this.clbActionsBranding.FormattingEnabled = true;
+            this.clbActionsBranding.Location = new System.Drawing.Point(10, 190);
+            this.clbActionsBranding.Name = "clbActionsBranding";
+            this.clbActionsBranding.Size = new System.Drawing.Size(301, 116);
+            this.clbActionsBranding.TabIndex = 0;
+            // 
+            // clbActionsRelationship
+            // 
+            this.clbActionsRelationship.FormattingEnabled = true;
+            this.clbActionsRelationship.Location = new System.Drawing.Point(167, 40);
+            this.clbActionsRelationship.Name = "clbActionsRelationship";
+            this.clbActionsRelationship.Size = new System.Drawing.Size(144, 116);
+            this.clbActionsRelationship.TabIndex = 0;
+            // 
+            // clbActionsContent
+            // 
+            this.clbActionsContent.FormattingEnabled = true;
+            this.clbActionsContent.Location = new System.Drawing.Point(10, 40);
+            this.clbActionsContent.Name = "clbActionsContent";
+            this.clbActionsContent.Size = new System.Drawing.Size(144, 116);
+            this.clbActionsContent.TabIndex = 0;
+            // 
             // proposalUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gpbActions);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.gpbInitialData);
             this.Controls.Add(this.btnGerarProposta);
             this.Margin = new System.Windows.Forms.Padding(10);
-            this.MinimumSize = new System.Drawing.Size(662, 177);
+            this.MaximumSize = new System.Drawing.Size(662, 352);
+            this.MinimumSize = new System.Drawing.Size(662, 352);
             this.Name = "proposalUserControl";
-            this.Size = new System.Drawing.Size(662, 428);
+            this.Size = new System.Drawing.Size(662, 352);
             this.gpbInitialData.ResumeLayout(false);
             this.gpbInitialData.PerformLayout();
+            this.gpbActions.ResumeLayout(false);
+            this.gpbActions.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -256,5 +344,12 @@
         private System.Windows.Forms.Label lblContact;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox ckbGenerateEmail;
+        private System.Windows.Forms.GroupBox gpbActions;
+        private System.Windows.Forms.CheckedListBox clbActionsRelationship;
+        private System.Windows.Forms.CheckedListBox clbActionsContent;
+        private System.Windows.Forms.CheckedListBox clbActionsBranding;
+        private System.Windows.Forms.Label lblBrainBranding;
+        private System.Windows.Forms.Label lblBrainRelationship;
+        private System.Windows.Forms.Label lblBrainContent;
     }
 }

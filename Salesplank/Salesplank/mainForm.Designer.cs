@@ -150,7 +150,7 @@ namespace Salesplank
             this.btnCloseSup.FlatAppearance.BorderSize = 0;
             this.btnCloseSup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseSup.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseSup.Location = new System.Drawing.Point(774, 15);
+            this.btnCloseSup.Location = new System.Drawing.Point(770, 10);
             this.btnCloseSup.Name = "btnCloseSup";
             this.btnCloseSup.Size = new System.Drawing.Size(33, 32);
             this.btnCloseSup.TabIndex = 1;
@@ -187,19 +187,21 @@ namespace Salesplank
             // 
             // contractUserControl
             // 
-            this.contractUserControl.Location = new System.Drawing.Point(160, 143);
-            this.contractUserControl.MinimumSize = new System.Drawing.Size(662, 177);
+            this.contractUserControl.Location = new System.Drawing.Point(160, 168);
+            this.contractUserControl.MaximumSize = new System.Drawing.Size(662, 352);
+            this.contractUserControl.MinimumSize = new System.Drawing.Size(662, 352);
             this.contractUserControl.Name = "contractUserControl";
-            this.contractUserControl.Size = new System.Drawing.Size(662, 379);
+            this.contractUserControl.Size = new System.Drawing.Size(662, 352);
             this.contractUserControl.TabIndex = 7;
             // 
             // proposalUserControl
             // 
-            this.proposalUserControl.Location = new System.Drawing.Point(160, 161);
+            this.proposalUserControl.Location = new System.Drawing.Point(160, 168);
             this.proposalUserControl.Margin = new System.Windows.Forms.Padding(10);
-            this.proposalUserControl.MinimumSize = new System.Drawing.Size(662, 177);
+            this.proposalUserControl.MaximumSize = new System.Drawing.Size(662, 352);
+            this.proposalUserControl.MinimumSize = new System.Drawing.Size(662, 352);
             this.proposalUserControl.Name = "proposalUserControl";
-            this.proposalUserControl.Size = new System.Drawing.Size(662, 361);
+            this.proposalUserControl.Size = new System.Drawing.Size(662, 352);
             this.proposalUserControl.TabIndex = 5;
             // 
             // mainForm

@@ -1,0 +1,398 @@
+[
+  {
+    "name": "Plenária",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 1
+  },
+  {
+    "name": "Mediação de Painel",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 1
+  },
+  {
+    "name": "Warm Up Session",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 1
+  },
+  {
+    "name": "PMV",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 1
+  },
+  {
+    "name": "Connection Session",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 1
+  },
+  {
+    "name": "Connection Session Exclusive",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 1
+  },
+  {
+    "name": "VIP Meeting",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 2
+  },
+  {
+    "name": "VIP Meeting Master",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 2
+  },
+  {
+    "name": "Almoço",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 2
+  },
+  {
+    "name": "Coffee Break",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 2
+  },
+  {
+    "name": "Exposição Eletrônica",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Brain Relaxing",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Mística",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Black",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Carrinho de Sorvete",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Carrinho de Pipoca",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Brand Awareness",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Carregadores de Celular",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Capa de Cadeira",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Cordão e Crachá",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Sacola",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Cubos",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Vìdeos com Frases",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Envelopamento",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Prisma",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Fotografia de Lembrança",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Mobile PDV",
+    "image": "path/to/image",
+    "projectType": 1,
+    "actionType": 3
+  },
+  {
+    "name": "Plenária",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "Mediação de Painel",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "Warm Up Session",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "PMV",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "Connection Session",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "Connection Session Exclusive",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "Presidência",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "Synapses Session",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "Grupo de Estudos",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 1
+  },
+  {
+    "name": "VIP Meeting",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 2
+  },
+  {
+    "name": "VIP Meeting Master",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 2
+  },
+  {
+    "name": "Almoço",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 2
+  },
+  {
+    "name": "Coffee Break",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 2
+  },
+  {
+    "name": "Jantar",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 2
+  },
+  {
+    "name": "Happy Hour",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 2
+  },
+  {
+    "name": "Cassino e Happy Hour",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 2
+  },
+  {
+    "name": "Salas para Amostra de Produtos",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 2
+  },
+  {
+    "name": "Kit Recepção",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Welcome Kit",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Revista Oficial",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Banners",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Prisma",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Mística",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Caminhada",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Cubos",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Logo em Crachás e Cartões",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Agradecimento",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "SAB Relaxing",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Carregadores de Celular",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Cabide de Porta",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Fotografia",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Máquina de Sorvete",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Brand Awareness",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Vídeos com Frases",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Mobile PDV",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Capa de Cadeira",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Envelopamento de Coluna",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Carrinho de Pipoca",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  },
+  {
+    "name": "Black",
+    "image": "path/to/image",
+    "projectType": 2,
+    "actionType": 3
+  }
+]
