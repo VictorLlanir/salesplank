@@ -19,7 +19,7 @@ namespace Salesplank.Controls
         public proposalUserControl()
         {
             InitializeComponent();
-            //PopulateProjectList();
+            PopulateProjectList();
             PopulateActionList();
         }
         // Eventos
@@ -33,13 +33,35 @@ namespace Salesplank.Controls
             PopulateProjectCheckListBox(EProjectType.StrategicAdvisoryBoard);
             PopulateActionCheckListBoxes(EProjectType.StrategicAdvisoryBoard);
         }
+        private void rdbMade2Make_CheckedChanged(object sender, EventArgs e)
+        {
+            ClearCheckListBoxes();
+        }
+        private void btnSelectSponsorLogo_Click(object sender, EventArgs e)
+        {
+            ofdSelectLogo.Filter = "Arquivos de imagem (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
+            ofdSelectLogo.CheckFileExists = true;
+            ofdSelectLogo.CheckPathExists = true;
+            ofdSelectLogo.Multiselect = false;
+            if (ofdSelectLogo.ShowDialog() == DialogResult.OK)
+                lblLogoPath.Text = ofdSelectLogo.FileName.Split('\\').Last();
+        }
         private void btnClear_Click(object sender, EventArgs e)
         {
             rdbBrainInteractivity.Checked = false;
             rdbMade2Make.Checked = false;
             rdbSab.Checked = false;
-            clbProjects.Items.Clear();
-            gpbInitialData.Visible = false;
+            ClearCheckListBoxes();
+            txtSponsorName.Text = "";
+            cbNumSponsors.SelectedItem = null;
+            txtContact.Text = "";
+            ckbGenerateEmail.Checked = false;
+            lblLogoPath.Text = "";
+            ofdSelectLogo.Dispose();
+        }
+        private void btnGerarProposta_Click(object sender, EventArgs e)
+        {
+            var x = clbProjects.CheckedItems;
         }
         // Meus métodos
         private void PopulateProjectCheckListBox(EProjectType projectType)
@@ -73,6 +95,13 @@ namespace Salesplank.Controls
             var streamReader = new StreamReader(@"C:\Users\Victor\source\repos\VictorLlanir\salesplank\Salesplank\Salesplank\Data\Actions.json", Encoding.UTF8);
             var json = streamReader.ReadToEnd();
             _actionList = JsonConvert.DeserializeObject<List<Action>>(json);
+        }
+        private void ClearCheckListBoxes()
+        {
+            clbProjects.Items.Clear();
+            clbActionsBranding.Items.Clear();
+            clbActionsContent.Items.Clear();
+            clbActionsRelationship.Items.Clear();
         }
     }
 }

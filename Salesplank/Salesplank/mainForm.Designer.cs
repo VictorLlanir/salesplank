@@ -150,7 +150,7 @@ namespace Salesplank
             this.btnCloseSup.FlatAppearance.BorderSize = 0;
             this.btnCloseSup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseSup.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseSup.Location = new System.Drawing.Point(770, 10);
+            this.btnCloseSup.Location = new System.Drawing.Point(774, 10);
             this.btnCloseSup.Name = "btnCloseSup";
             this.btnCloseSup.Size = new System.Drawing.Size(33, 32);
             this.btnCloseSup.TabIndex = 1;

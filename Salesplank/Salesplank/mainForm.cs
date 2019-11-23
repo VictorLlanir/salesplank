@@ -16,6 +16,8 @@ namespace Salesplank
             lblColorProposals.Visible = false;
             proposalUserControl.Visible = false;
             contractUserControl.Visible = false;
+
+            btnContracts.Enabled = false;
         }
         private void btnCloseSup_Click(object sender, EventArgs e) => Close();
         private void btnClose_Click(object sender, EventArgs e) => Close();

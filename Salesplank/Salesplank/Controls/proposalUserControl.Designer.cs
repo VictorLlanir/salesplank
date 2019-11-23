@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGerarProposta = new System.Windows.Forms.Button();
+            this.btnGenerate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.gpbInitialData = new System.Windows.Forms.GroupBox();
             this.ckbGenerateEmail = new System.Windows.Forms.CheckBox();
             this.lblContact = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
             this.clbProjects = new System.Windows.Forms.CheckedListBox();
             this.lblNumSponsors = new System.Windows.Forms.Label();
             this.lblSelectProject = new System.Windows.Forms.Label();
@@ -51,23 +51,26 @@
             this.clbActionsBranding = new System.Windows.Forms.CheckedListBox();
             this.clbActionsRelationship = new System.Windows.Forms.CheckedListBox();
             this.clbActionsContent = new System.Windows.Forms.CheckedListBox();
+            this.ofdSelectLogo = new System.Windows.Forms.OpenFileDialog();
+            this.lblLogoPath = new System.Windows.Forms.Label();
             this.gpbInitialData.SuspendLayout();
             this.gpbActions.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnGerarProposta
+            // btnGenerate
             // 
-            this.btnGerarProposta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnGerarProposta.FlatAppearance.BorderSize = 0;
-            this.btnGerarProposta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGerarProposta.Font = new System.Drawing.Font("Effra Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerarProposta.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGerarProposta.Location = new System.Drawing.Point(13, 308);
-            this.btnGerarProposta.Name = "btnGerarProposta";
-            this.btnGerarProposta.Size = new System.Drawing.Size(125, 30);
-            this.btnGerarProposta.TabIndex = 1;
-            this.btnGerarProposta.Text = "Gerar proposta";
-            this.btnGerarProposta.UseVisualStyleBackColor = false;
+            this.btnGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGenerate.FlatAppearance.BorderSize = 0;
+            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerate.Font = new System.Drawing.Font("Effra Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGenerate.Location = new System.Drawing.Point(13, 308);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(125, 30);
+            this.btnGenerate.TabIndex = 1;
+            this.btnGenerate.Text = "Gerar proposta";
+            this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGerarProposta_Click);
             // 
             // btnClear
             // 
@@ -86,9 +89,10 @@
             // 
             // gpbInitialData
             // 
+            this.gpbInitialData.Controls.Add(this.lblLogoPath);
             this.gpbInitialData.Controls.Add(this.ckbGenerateEmail);
             this.gpbInitialData.Controls.Add(this.lblContact);
-            this.gpbInitialData.Controls.Add(this.textBox1);
+            this.gpbInitialData.Controls.Add(this.txtContact);
             this.gpbInitialData.Controls.Add(this.clbProjects);
             this.gpbInitialData.Controls.Add(this.lblNumSponsors);
             this.gpbInitialData.Controls.Add(this.lblSelectProject);
@@ -126,19 +130,19 @@
             this.lblContact.TabIndex = 10;
             this.lblContact.Text = "Contato";
             // 
-            // textBox1
+            // txtContact
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 21);
-            this.textBox1.TabIndex = 9;
+            this.txtContact.Location = new System.Drawing.Point(159, 128);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(132, 21);
+            this.txtContact.TabIndex = 9;
             // 
             // clbProjects
             // 
             this.clbProjects.FormattingEnabled = true;
-            this.clbProjects.Location = new System.Drawing.Point(158, 159);
+            this.clbProjects.Location = new System.Drawing.Point(129, 159);
             this.clbProjects.Name = "clbProjects";
-            this.clbProjects.Size = new System.Drawing.Size(132, 84);
+            this.clbProjects.Size = new System.Drawing.Size(161, 84);
             this.clbProjects.TabIndex = 8;
             // 
             // lblNumSponsors
@@ -185,6 +189,7 @@
             this.rdbMade2Make.TabStop = true;
             this.rdbMade2Make.Text = "Made 2 Make";
             this.rdbMade2Make.UseVisualStyleBackColor = true;
+            this.rdbMade2Make.CheckedChanged += new System.EventHandler(this.rdbMade2Make_CheckedChanged);
             // 
             // cbNumSponsors
             // 
@@ -231,12 +236,13 @@
             // btnSelectSponsorLogo
             // 
             this.btnSelectSponsorLogo.Font = new System.Drawing.Font("Effra", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectSponsorLogo.Location = new System.Drawing.Point(14, 48);
+            this.btnSelectSponsorLogo.Location = new System.Drawing.Point(21, 48);
             this.btnSelectSponsorLogo.Name = "btnSelectSponsorLogo";
-            this.btnSelectSponsorLogo.Size = new System.Drawing.Size(276, 23);
+            this.btnSelectSponsorLogo.Size = new System.Drawing.Size(187, 23);
             this.btnSelectSponsorLogo.TabIndex = 0;
             this.btnSelectSponsorLogo.Text = "Selecionar logo do patrocinador";
             this.btnSelectSponsorLogo.UseVisualStyleBackColor = true;
+            this.btnSelectSponsorLogo.Click += new System.EventHandler(this.btnSelectSponsorLogo_Click);
             // 
             // gpbActions
             // 
@@ -305,6 +311,18 @@
             this.clbActionsContent.Size = new System.Drawing.Size(144, 116);
             this.clbActionsContent.TabIndex = 0;
             // 
+            // ofdSelectLogo
+            // 
+            this.ofdSelectLogo.FileName = "ofdLogo";
+            // 
+            // lblLogoPath
+            // 
+            this.lblLogoPath.Location = new System.Drawing.Point(215, 57);
+            this.lblLogoPath.Name = "lblLogoPath";
+            this.lblLogoPath.Size = new System.Drawing.Size(70, 13);
+            this.lblLogoPath.TabIndex = 12;
+            this.lblLogoPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // proposalUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,7 +330,7 @@
             this.Controls.Add(this.gpbActions);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.gpbInitialData);
-            this.Controls.Add(this.btnGerarProposta);
+            this.Controls.Add(this.btnGenerate);
             this.Margin = new System.Windows.Forms.Padding(10);
             this.MaximumSize = new System.Drawing.Size(662, 352);
             this.MinimumSize = new System.Drawing.Size(662, 352);
@@ -328,7 +346,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnGerarProposta;
+        private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.GroupBox gpbInitialData;
         private System.Windows.Forms.TextBox txtSponsorName;
@@ -342,7 +360,7 @@
         private System.Windows.Forms.CheckedListBox clbProjects;
         private System.Windows.Forms.Label lblNumSponsors;
         private System.Windows.Forms.Label lblContact;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.CheckBox ckbGenerateEmail;
         private System.Windows.Forms.GroupBox gpbActions;
         private System.Windows.Forms.CheckedListBox clbActionsRelationship;
@@ -351,5 +369,7 @@
         private System.Windows.Forms.Label lblBrainBranding;
         private System.Windows.Forms.Label lblBrainRelationship;
         private System.Windows.Forms.Label lblBrainContent;
+        private System.Windows.Forms.OpenFileDialog ofdSelectLogo;
+        private System.Windows.Forms.Label lblLogoPath;
     }
 }
