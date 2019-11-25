@@ -31,6 +31,7 @@
             this.btnGenerate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.gpbInitialData = new System.Windows.Forms.GroupBox();
+            this.lblLogoPath = new System.Windows.Forms.Label();
             this.ckbGenerateEmail = new System.Windows.Forms.CheckBox();
             this.lblContact = new System.Windows.Forms.Label();
             this.txtContact = new System.Windows.Forms.TextBox();
@@ -52,7 +53,6 @@
             this.clbActionsRelationship = new System.Windows.Forms.CheckedListBox();
             this.clbActionsContent = new System.Windows.Forms.CheckedListBox();
             this.ofdSelectLogo = new System.Windows.Forms.OpenFileDialog();
-            this.lblLogoPath = new System.Windows.Forms.Label();
             this.gpbInitialData.SuspendLayout();
             this.gpbActions.SuspendLayout();
             this.SuspendLayout();
@@ -64,13 +64,13 @@
             this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerate.Font = new System.Drawing.Font("Effra Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGenerate.Location = new System.Drawing.Point(13, 308);
+            this.btnGenerate.Location = new System.Drawing.Point(15, 431);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(125, 30);
             this.btnGenerate.TabIndex = 1;
             this.btnGenerate.Text = "Gerar proposta";
             this.btnGenerate.UseVisualStyleBackColor = false;
-            this.btnGenerate.Click += new System.EventHandler(this.btnGerarProposta_Click);
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // btnClear
             // 
@@ -79,7 +79,7 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Effra Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnClear.Location = new System.Drawing.Point(194, 308);
+            this.btnClear.Location = new System.Drawing.Point(196, 431);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(125, 29);
             this.btnClear.TabIndex = 4;
@@ -104,17 +104,25 @@
             this.gpbInitialData.Controls.Add(this.rdbSab);
             this.gpbInitialData.Controls.Add(this.btnSelectSponsorLogo);
             this.gpbInitialData.Font = new System.Drawing.Font("Effra", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbInitialData.Location = new System.Drawing.Point(13, 13);
+            this.gpbInitialData.Location = new System.Drawing.Point(15, 136);
             this.gpbInitialData.Name = "gpbInitialData";
             this.gpbInitialData.Size = new System.Drawing.Size(306, 285);
             this.gpbInitialData.TabIndex = 2;
             this.gpbInitialData.TabStop = false;
             this.gpbInitialData.Text = "Dados iniciais";
             // 
+            // lblLogoPath
+            // 
+            this.lblLogoPath.Location = new System.Drawing.Point(215, 57);
+            this.lblLogoPath.Name = "lblLogoPath";
+            this.lblLogoPath.Size = new System.Drawing.Size(70, 13);
+            this.lblLogoPath.TabIndex = 12;
+            this.lblLogoPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // ckbGenerateEmail
             // 
             this.ckbGenerateEmail.AutoSize = true;
-            this.ckbGenerateEmail.Location = new System.Drawing.Point(21, 252);
+            this.ckbGenerateEmail.Location = new System.Drawing.Point(21, 254);
             this.ckbGenerateEmail.Name = "ckbGenerateEmail";
             this.ckbGenerateEmail.Size = new System.Drawing.Size(143, 16);
             this.ckbGenerateEmail.TabIndex = 11;
@@ -139,6 +147,7 @@
             // 
             // clbProjects
             // 
+            this.clbProjects.CheckOnClick = true;
             this.clbProjects.FormattingEnabled = true;
             this.clbProjects.Location = new System.Drawing.Point(129, 159);
             this.clbProjects.Name = "clbProjects";
@@ -253,9 +262,9 @@
             this.gpbActions.Controls.Add(this.clbActionsRelationship);
             this.gpbActions.Controls.Add(this.clbActionsContent);
             this.gpbActions.Font = new System.Drawing.Font("Effra", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbActions.Location = new System.Drawing.Point(326, 13);
+            this.gpbActions.Location = new System.Drawing.Point(328, 15);
             this.gpbActions.Name = "gpbActions";
-            this.gpbActions.Size = new System.Drawing.Size(321, 325);
+            this.gpbActions.Size = new System.Drawing.Size(321, 446);
             this.gpbActions.TabIndex = 5;
             this.gpbActions.TabStop = false;
             this.gpbActions.Text = "Cotas";
@@ -263,7 +272,7 @@
             // lblBrainBranding
             // 
             this.lblBrainBranding.AutoSize = true;
-            this.lblBrainBranding.Location = new System.Drawing.Point(10, 172);
+            this.lblBrainBranding.Location = new System.Drawing.Point(13, 302);
             this.lblBrainBranding.Name = "lblBrainBranding";
             this.lblBrainBranding.Size = new System.Drawing.Size(46, 12);
             this.lblBrainBranding.TabIndex = 1;
@@ -272,7 +281,7 @@
             // lblBrainRelationship
             // 
             this.lblBrainRelationship.AutoSize = true;
-            this.lblBrainRelationship.Location = new System.Drawing.Point(165, 22);
+            this.lblBrainRelationship.Location = new System.Drawing.Point(13, 25);
             this.lblBrainRelationship.Name = "lblBrainRelationship";
             this.lblBrainRelationship.Size = new System.Drawing.Size(79, 12);
             this.lblBrainRelationship.TabIndex = 1;
@@ -281,7 +290,7 @@
             // lblBrainContent
             // 
             this.lblBrainContent.AutoSize = true;
-            this.lblBrainContent.Location = new System.Drawing.Point(10, 22);
+            this.lblBrainContent.Location = new System.Drawing.Point(13, 162);
             this.lblBrainContent.Name = "lblBrainContent";
             this.lblBrainContent.Size = new System.Drawing.Size(52, 12);
             this.lblBrainContent.TabIndex = 1;
@@ -289,39 +298,34 @@
             // 
             // clbActionsBranding
             // 
+            this.clbActionsBranding.CheckOnClick = true;
             this.clbActionsBranding.FormattingEnabled = true;
-            this.clbActionsBranding.Location = new System.Drawing.Point(10, 190);
+            this.clbActionsBranding.Location = new System.Drawing.Point(11, 317);
             this.clbActionsBranding.Name = "clbActionsBranding";
             this.clbActionsBranding.Size = new System.Drawing.Size(301, 116);
             this.clbActionsBranding.TabIndex = 0;
             // 
             // clbActionsRelationship
             // 
+            this.clbActionsRelationship.CheckOnClick = true;
             this.clbActionsRelationship.FormattingEnabled = true;
-            this.clbActionsRelationship.Location = new System.Drawing.Point(167, 40);
+            this.clbActionsRelationship.Location = new System.Drawing.Point(12, 40);
             this.clbActionsRelationship.Name = "clbActionsRelationship";
-            this.clbActionsRelationship.Size = new System.Drawing.Size(144, 116);
+            this.clbActionsRelationship.Size = new System.Drawing.Size(299, 116);
             this.clbActionsRelationship.TabIndex = 0;
             // 
             // clbActionsContent
             // 
+            this.clbActionsContent.CheckOnClick = true;
             this.clbActionsContent.FormattingEnabled = true;
-            this.clbActionsContent.Location = new System.Drawing.Point(10, 40);
+            this.clbActionsContent.Location = new System.Drawing.Point(12, 177);
             this.clbActionsContent.Name = "clbActionsContent";
-            this.clbActionsContent.Size = new System.Drawing.Size(144, 116);
+            this.clbActionsContent.Size = new System.Drawing.Size(299, 116);
             this.clbActionsContent.TabIndex = 0;
             // 
             // ofdSelectLogo
             // 
             this.ofdSelectLogo.FileName = "ofdLogo";
-            // 
-            // lblLogoPath
-            // 
-            this.lblLogoPath.Location = new System.Drawing.Point(215, 57);
-            this.lblLogoPath.Name = "lblLogoPath";
-            this.lblLogoPath.Size = new System.Drawing.Size(70, 13);
-            this.lblLogoPath.TabIndex = 12;
-            this.lblLogoPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // proposalUserControl
             // 
@@ -332,10 +336,10 @@
             this.Controls.Add(this.gpbInitialData);
             this.Controls.Add(this.btnGenerate);
             this.Margin = new System.Windows.Forms.Padding(10);
-            this.MaximumSize = new System.Drawing.Size(662, 352);
-            this.MinimumSize = new System.Drawing.Size(662, 352);
+            this.MaximumSize = new System.Drawing.Size(662, 473);
+            this.MinimumSize = new System.Drawing.Size(662, 473);
             this.Name = "proposalUserControl";
-            this.Size = new System.Drawing.Size(662, 352);
+            this.Size = new System.Drawing.Size(662, 473);
             this.gpbInitialData.ResumeLayout(false);
             this.gpbInitialData.PerformLayout();
             this.gpbActions.ResumeLayout(false);

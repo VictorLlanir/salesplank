@@ -8,6 +8,10 @@ using Newtonsoft.Json;
 using Salesplank.Entities;
 using Salesplank.Enums;
 using Action = Salesplank.Entities.Action;
+using Microsoft.Office.Interop.PowerPoint;
+using Microsoft.Office.Core;
+using Application = Microsoft.Office.Interop.PowerPoint.Application;
+using static System.Windows.Forms.CheckedListBox;
 
 namespace Salesplank.Controls
 {
@@ -59,9 +63,48 @@ namespace Salesplank.Controls
             lblLogoPath.Text = "";
             ofdSelectLogo.Dispose();
         }
-        private void btnGerarProposta_Click(object sender, EventArgs e)
+        private void btnGenerate_Click(object sender, EventArgs e)
         {
-            var x = clbProjects.CheckedItems;
+            if (!IsValid())
+            {
+                MessageBox.Show("Preencha os dados corretamente!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            try
+            {
+                //Slides slides;
+                //_Slide slide;
+                //TextRange objText;
+                //_Application pptApplication = new Application();
+
+                var selectedProjects = GetProjectList(clbProjects.CheckedItems);
+                var selectActions = GetActionList(clbActionsBranding.CheckedItems, clbActionsContent.CheckedItems, clbActionsRelationship.CheckedItems);
+
+                //var pptPresentation = pptApplication.Presentations.Add(MsoTriState.msoTrue);
+                //var customLayout = pptPresentation.SlideMaster.CustomLayouts[PpSlideLayout.ppLayoutText];
+
+                //slides = pptPresentation.Slides;
+                //slide = slides.AddSlide(1, customLayout);
+
+                //objText = slide.Shapes[1].TextFrame.TextRange;
+                //objText.Text = "EBDI Corp";
+                //objText.Font.Name = "Effra";
+                //objText.Font.Size = 32;
+
+                //objText = slide.Shapes[2].TextFrame.TextRange;
+                //objText.Text = "Aqui está um pouco de conteúdo";
+
+                //slide.NotesPage.Shapes[2].TextFrame.TextRange.Text = "Isto é Brasil";
+
+                //pptPresentation.SaveAs(@"C:\Users\Victor\Desktop\Proposta.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
+                ////pptPresentation.Close();
+                //pptApplication.Quit();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.Message);
+                throw;
+            }
         }
         // Meus métodos
         private void PopulateProjectCheckListBox(EProjectType projectType)
@@ -102,6 +145,30 @@ namespace Salesplank.Controls
             clbActionsBranding.Items.Clear();
             clbActionsContent.Items.Clear();
             clbActionsRelationship.Items.Clear();
+        }
+        private bool IsValid()
+        {
+            return true;
+        }
+        private List<Project> GetProjectList(CheckedItemCollection checkedProjects)
+        {
+            var projectList = new List<Project>();
+            foreach (var item in checkedProjects)
+                projectList.Add(_projectList.FirstOrDefault(p => p.Name == item.ToString()));
+
+            return projectList;
+        }
+        private List<Action> GetActionList(CheckedItemCollection checkedActionsBranding, CheckedItemCollection checkedActionsContent, CheckedItemCollection checkedActionsRelationship)
+        {
+            var actionList = new List<Action>();
+            foreach (var item in checkedActionsBranding)
+                actionList.Add(_actionList.FirstOrDefault(p => p.Name == item.ToString()));
+            foreach (var item in checkedActionsContent)
+                actionList.Add(_actionList.FirstOrDefault(p => p.Name == item.ToString()));
+            foreach (var item in checkedActionsRelationship)
+                actionList.Add(_actionList.FirstOrDefault(p => p.Name == item.ToString()));
+
+            return actionList;
         }
     }
 }

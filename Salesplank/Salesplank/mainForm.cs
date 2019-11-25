@@ -11,6 +11,9 @@ namespace Salesplank
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width - 5, Height - 5, 10, 10));
+            lblTitle.BringToFront();
+            lblLine.BringToFront();
+            lblSelected.BringToFront();
             lblSelected.Text = "Bem-vindo";
             lblColorContracts.Visible = false;
             lblColorProposals.Visible = false;

@@ -165,7 +165,7 @@ namespace Salesplank
             this.lblTitle.Location = new System.Drawing.Point(167, 47);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(238, 54);
-            this.lblTitle.TabIndex = 2;
+            this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Salesplank";
             // 
             // lblLine
@@ -187,21 +187,20 @@ namespace Salesplank
             // 
             // contractUserControl
             // 
-            this.contractUserControl.Location = new System.Drawing.Point(160, 168);
-            this.contractUserControl.MaximumSize = new System.Drawing.Size(662, 352);
+            this.contractUserControl.Location = new System.Drawing.Point(161, 49);
             this.contractUserControl.MinimumSize = new System.Drawing.Size(662, 352);
             this.contractUserControl.Name = "contractUserControl";
-            this.contractUserControl.Size = new System.Drawing.Size(662, 352);
+            this.contractUserControl.Size = new System.Drawing.Size(662, 473);
             this.contractUserControl.TabIndex = 7;
             // 
             // proposalUserControl
             // 
-            this.proposalUserControl.Location = new System.Drawing.Point(160, 168);
+            this.proposalUserControl.Location = new System.Drawing.Point(161, 49);
             this.proposalUserControl.Margin = new System.Windows.Forms.Padding(10);
-            this.proposalUserControl.MaximumSize = new System.Drawing.Size(662, 352);
-            this.proposalUserControl.MinimumSize = new System.Drawing.Size(662, 352);
+            this.proposalUserControl.MaximumSize = new System.Drawing.Size(662, 473);
+            this.proposalUserControl.MinimumSize = new System.Drawing.Size(662, 473);
             this.proposalUserControl.Name = "proposalUserControl";
-            this.proposalUserControl.Size = new System.Drawing.Size(662, 352);
+            this.proposalUserControl.Size = new System.Drawing.Size(662, 473);
             this.proposalUserControl.TabIndex = 5;
             // 
             // mainForm

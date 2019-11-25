@@ -2,49 +2,49 @@
   {
     "name": "Xperience",
     "image": "path/to/image",
-    "description": "Conheça seu público e mantenha suas estratégias alinhadas para potencializar a experiência do cliente.",
+    "description": "ConheÃ§a seu pÃºblico e mantenha suas estratÃ©gias alinhadas para potencializar a experiÃªncia do cliente.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "29 e 30 de janeiro"
   },
   {
     "name": "HR Mind Move",
     "image": "path/to/image",
-    "description": "Como as experiências de aprendizagem impactam no resultado da sua companhia? Discuta a gestão do DHO.",
+    "description": "Como as experiÃªncias de aprendizagem impactam no resultado da sua companhia? Discuta a gestÃ£o do DHO.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "19 e 20 de fevereiro"
   },
   {
     "name": "Data Analytics Innovation",
     "image": "path/to/image",
-    "description": "Potencialize suas estratégias através da inovação em dados!",
+    "description": "Potencialize suas estratÃ©gias atravÃ©s da inovaÃ§Ã£o em dados!",
     "projectType": 1,
-    "place": "São Paulo",
-    "date": "04 e 05 de março"
+    "place": "SÃ£o Paulo",
+    "date": "04 e 05 de marÃ§o"
   },
   {
     "name": "Future Pay",
     "image": "path/to/image",
-    "description": "O futuro dos meios de pagamento é agora. Você está pronto?",
+    "description": "O futuro dos meios de pagamento Ã© agora. VocÃª estÃ¡ pronto?",
     "projectType": 1,
-    "place": "São Paulo",
-    "date": "18 e 19 de março"
+    "place": "SÃ£o Paulo",
+    "date": "18 e 19 de marÃ§o"
   },
   {
     "name": "Business Innovation",
     "image": "path/to/image",
-    "description": "Você sabe os impactos da inovação dentro da sua companhia? Vamos juntos nos tornar inovadores!",
+    "description": "VocÃª sabe os impactos da inovaÃ§Ã£o dentro da sua companhia? Vamos juntos nos tornar inovadores!",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "29 e 30 de janeiro"
   },
   {
     "name": "Customer After Sales Services",
     "image": "path/to/image",
-    "description": "Estratégias para tornar a experiência no pós-venda tão agradável que garantirá fidelidade e propagação da sua marca.",
+    "description": "EstratÃ©gias para tornar a experiÃªncia no pÃ³s-venda tÃ£o agradÃ¡vel que garantirÃ¡ fidelidade e propagaÃ§Ã£o da sua marca.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "08 e 09 de abril"
   },
   {
@@ -52,7 +52,7 @@
     "image": "path/to/image",
     "description": "Vamos falar sobre como continuar inovando com o seu CSC?",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "08, 09 e 10 e abril"
   },
   {
@@ -60,159 +60,159 @@
     "image": "path/to/image",
     "description": "Quais os principais desafios dos gestores de Recursos Humanos?",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "22, 23 e 24 de abril"
   },
   {
     "name": "Business Health Innovation",
     "image": "path/to/image",
-    "description": "Não remediar a saúde corporativa pode ser fatal. Vamos nos encontrar para discutir este assunto?",
+    "description": "NÃ£o remediar a saÃºde corporativa pode ser fatal. Vamos nos encontrar para discutir este assunto?",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "06 e 07 de maio"
   },
   {
     "name": "Retailed! IT",
     "image": "path/to/image",
-    "description": "Varejo ágil: sua operação está pronta para inovar?",
+    "description": "Varejo Ã¡gil: sua operaÃ§Ã£o estÃ¡ pronta para inovar?",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "13, 14 e 15 de maio"
   },
   {
     "name": "Data Governance",
     "image": "path/to/image",
-    "description": "Organize seus dados: faça isso e impulsione o seu negócio.",
+    "description": "Organize seus dados: faÃ§a isso e impulsione o seu negÃ³cio.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "03 e 04 de junho"
   },
   {
     "name": "Consumer Credit Trends",
     "image": "path/to/image",
-    "description": "O que líderes de crédito e cobrança estão fazendo para reduzir a burocracia e aumentar a produtividade.",
+    "description": "O que lÃ­deres de crÃ©dito e cobranÃ§a estÃ£o fazendo para reduzir a burocracia e aumentar a produtividade.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "03 e 04 de junho"
   },
   {
     "name": "CFO",
     "image": "path/to/image",
-    "description": "Vamos debater como ser mais estratégico sem deixar de lado o EBITDA.",
+    "description": "Vamos debater como ser mais estratÃ©gico sem deixar de lado o EBITDA.",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "17, 18 e 19 de junho"
   },
   {
     "name": "Marketing Innovation",
     "image": "path/to/image",
-    "description": "Marketing e Tecnologia: como construir estratégias consistentes que atenderão o negócio?",
+    "description": "Marketing e Tecnologia: como construir estratÃ©gias consistentes que atenderÃ£o o negÃ³cio?",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "24 e 25 de junho"
   },
   {
     "name": "Corporate Education",
     "image": "path/to/image",
-    "description": "Qual a nova corrida pelo conhecimento? E como isso pode trazer resultados para a corporação?",
+    "description": "Qual a nova corrida pelo conhecimento? E como isso pode trazer resultados para a corporaÃ§Ã£o?",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "15 e 16 de julho"
   },
   {
     "name": "Communication",
     "image": "path/to/image",
-    "description": "Reinvente seus processos internos para uma melhor comunicação.",
+    "description": "Reinvente seus processos internos para uma melhor comunicaÃ§Ã£o.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "22 e 23 de julho"
   },
   {
     "name": "Marketing Innovation",
     "image": "path/to/image",
-    "description": "Gestão de benefícios: saiba porque cuidar dos seus colaboradores incrementa receita!",
+    "description": "GestÃ£o de benefÃ­cios: saiba porque cuidar dos seus colaboradores incrementa receita!",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "29 e 30 de julho"
   },
   {
     "name": "Retailed! FS",
     "image": "path/to/image",
-    "description": "Desafios de construir receita por meio de produtos e serviços financeiros do varejo.",
+    "description": "Desafios de construir receita por meio de produtos e serviÃ§os financeiros do varejo.",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "12, 13 e 14 de agosto"
   },
   {
     "name": "CEO",
     "image": "path/to/image",
-    "description": "Como aprimorar seus soft e hard skills para alcançar objetivos.",
+    "description": "Como aprimorar seus soft e hard skills para alcanÃ§ar objetivos.",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "19, 20 e 21 de agosto"
   },
   {
     "name": "Developing Organizational Culture",
     "image": "path/to/image",
-    "description": "Fortaleça sua cultura e garanta o futuro da organização!",
+    "description": "FortaleÃ§a sua cultura e garanta o futuro da organizaÃ§Ã£o!",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "09 e 10 de setembro"
   },
   {
     "name": "Shared Services Starters",
     "image": "path/to/image",
-    "description": "Estratégias para implementação e manutenção dos CSCs que ainda estão nos primeiros anos.",
+    "description": "EstratÃ©gias para implementaÃ§Ã£o e manutenÃ§Ã£o dos CSCs que ainda estÃ£o nos primeiros anos.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "16 e 17 de setembro"
   },
   {
     "name": "Industry Tech Innovation",
     "image": "path/to/image",
-    "description": "Inovação industrial e manufatura 4.0!",
+    "description": "InovaÃ§Ã£o industrial e manufatura 4.0!",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "16 e 17 de setembro"
   },
   {
     "name": "CIO",
     "image": "path/to/image",
-    "description": "O poder de transformar operações e reduzir custos, você está fazendo isso em sua empresa?",
+    "description": "O poder de transformar operaÃ§Ãµes e reduzir custos, vocÃª estÃ¡ fazendo isso em sua empresa?",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "23, 24 e 25 de setembro"
   },
   {
     "name": "Corporate Health Innovation",
     "image": "path/to/image",
-    "description": "Redução de custos, bem-estar dos funcionários e inovação de processos.",
+    "description": "ReduÃ§Ã£o de custos, bem-estar dos funcionÃ¡rios e inovaÃ§Ã£o de processos.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "30 de setembro e 01 de outubro"
   },
   {
     "name": "CMO",
     "image": "path/to/image",
-    "description": "Novas tecnologias e mudanças comportamentais da jornada do CMO.",
+    "description": "Novas tecnologias e mudanÃ§as comportamentais da jornada do CMO.",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "14, 15 e 16 de outubro"
   },
   {
     "name": "HR Trends",
     "image": "path/to/image",
-    "description": "Se você almeja ser o melhor RH, esqueça ser estratégico, apenas seja o diferencial e faça acontecer.",
+    "description": "Se vocÃª almeja ser o melhor RH, esqueÃ§a ser estratÃ©gico, apenas seja o diferencial e faÃ§a acontecer.",
     "projectType": 2,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "14, 15 e 16 de outubro"
   },
   {
     "name": "Process Innovation",
     "image": "path/to/image",
-    "description": "Qualidade vs Agilidade: como gerir processos em tempo de transformação?",
+    "description": "Qualidade vs Agilidade: como gerir processos em tempo de transformaÃ§Ã£o?",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "04 e 05 de novembro"
   },
   {
@@ -220,15 +220,15 @@
     "image": "path/to/image",
     "description": "Os desafios de desenvolver carreiras por meio do uso de tecnologia e dados.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "04 e 05 de novembro"
   },
   {
     "name": "Risk & Compliance Trends",
     "image": "path/to/image",
-    "description": "Legislações e normas, riscos, tecnologias, responsabilização administrativa e civil, segurança de dados e LGPD.",
+    "description": "LegislaÃ§Ãµes e normas, riscos, tecnologias, responsabilizaÃ§Ã£o administrativa e civil, seguranÃ§a de dados e LGPD.",
     "projectType": 1,
-    "place": "São Paulo",
+    "place": "SÃ£o Paulo",
     "date": "25 e 26 de novembro"
   }
 ]
