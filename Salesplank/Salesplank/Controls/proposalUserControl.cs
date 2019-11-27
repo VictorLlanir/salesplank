@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -208,8 +207,12 @@ namespace Salesplank.Controls
                 {
 
                 }
+                foreach (var action in actions)
+                {
+                    
+                }
 
-                pptPresentation.SaveAs(@"C:\Users\VictorTrevisan\Desktop\Proposta.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
+                pptPresentation.SaveAs($@"C:\Users\VictorTrevisan\Desktop\Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
                 //pptPresentation.Close();
                 //pptApplication.Quit();
             }
@@ -222,8 +225,8 @@ namespace Salesplank.Controls
 
             var bgSlide =
                 slide.Shapes.AddPicture(path, MsoTriState.msoTrue, MsoTriState.msoTrue, 0, 0, pptPresentation.PageSetup.SlideWidth, pptPresentation.PageSetup.SlideHeight);
-            bgSlide.ActionSettings[PpMouseActivation.ppMouseClick].Hyperlink.Address =
-                "https://www.youtube.com/watch?v=JlI-xOhjiUQ";
+            if (index == 3)
+                bgSlide.ActionSettings[PpMouseActivation.ppMouseClick].Hyperlink.Address = "https://www.youtube.com/watch?v=JlI-xOhjiUQ";
             bgSlide.Left = 0;
             bgSlide.Top = 0;
             bgSlide.Width = pptPresentation.PageSetup.SlideWidth;
