@@ -23,8 +23,9 @@ namespace Salesplank.Controls
         private static List<Action> _actionList = new List<Action>();
         private static string _logoPath;
         private static string _ebdiLogoPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\logo_ebdi.png";
-        private static string _quemNaoSomosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\quem_nao_somos.jpg";
+        private static string _oqueNaoSomosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_nao_somos.jpg";
         private static string _oQueSomosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_somos.jpg";
+        private static string _comoFazemosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\como_fazemos.jpg";
         private static string _oQueQueremosProporcionarPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_queremos_proporcionar.jpg";
         private static string _modeloBrainPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\modelo_brain.jpg";
         private static string _modeloSabPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\modelo_sab.jpg";
@@ -187,10 +188,11 @@ namespace Salesplank.Controls
                 ebdiLogo.Left = 500;
                 ebdiLogo.Top = 400;
 
-                AddSlideWithImage(pptPresentation, slides, 2, textLayout, _quemNaoSomosPath);
+                AddSlideWithImage(pptPresentation, slides, 2, textLayout, _oqueNaoSomosPath);
                 AddSlideWithImage(pptPresentation, slides, 3, textLayout, _oQueSomosPath);
-                AddSlideWithImage(pptPresentation, slides, 4, textLayout, _oQueQueremosProporcionarPath);
-                var pageNum = 5;
+                AddSlideWithImage(pptPresentation, slides, 4, textLayout, _comoFazemosPath);
+                AddSlideWithImage(pptPresentation, slides, 5, textLayout, _oQueQueremosProporcionarPath);
+                var pageNum = 6;
                 if (projects.Count(p => p.ProjectType == EProjectType.BrainInteractivity) > 0)
                 {
                     AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, _modeloBrainPath);
@@ -201,32 +203,6 @@ namespace Salesplank.Controls
                     AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, _modeloSabPath);
                     pageNum++;
                 }
-
-                //#region SecondSlide
-                //var secondSlide = slides.AddSlide(2, textLayout);
-                //secondSlide.Shapes[1].Visible = MsoTriState.msoFalse;
-                //secondSlide.Shapes[2].Visible = MsoTriState.msoFalse;
-
-                //var bgSecondSlide =
-                //    secondSlide.Shapes.AddPicture(_quemNaoSomosPath, MsoTriState.msoTrue, MsoTriState.msoTrue, 0, 0, pptPresentation.PageSetup.SlideWidth, pptPresentation.PageSetup.SlideHeight);
-                //bgSecondSlide.Left = 0;
-                //bgSecondSlide.Top = 0;
-                //bgSecondSlide.Width = pptPresentation.PageSetup.SlideWidth;
-                //bgSecondSlide.Height = pptPresentation.PageSetup.SlideHeight;
-                //#endregion
-
-                //#region ThirdSlide
-                //var thirdSlide = slides.AddSlide(3, textLayout);
-                //thirdSlide.Shapes[1].Visible = MsoTriState.msoFalse;
-                //thirdSlide.Shapes[2].Visible = MsoTriState.msoFalse;
-
-                //var bgThirdSlide =
-                //    thirdSlide.Shapes.AddPicture(_oQueSomosPath, MsoTriState.msoTrue, MsoTriState.msoTrue, 0, 0, pptPresentation.PageSetup.SlideWidth, pptPresentation.PageSetup.SlideHeight);
-                //bgThirdSlide.Left = 0;
-                //bgThirdSlide.Top = 0;
-                //bgThirdSlide.Width = pptPresentation.PageSetup.SlideWidth;
-                //bgThirdSlide.Height = pptPresentation.PageSetup.SlideHeight;
-                //#endregion
 
                 foreach (var project in projects)
                 {
@@ -246,6 +222,8 @@ namespace Salesplank.Controls
 
             var bgSlide =
                 slide.Shapes.AddPicture(path, MsoTriState.msoTrue, MsoTriState.msoTrue, 0, 0, pptPresentation.PageSetup.SlideWidth, pptPresentation.PageSetup.SlideHeight);
+            bgSlide.ActionSettings[PpMouseActivation.ppMouseClick].Hyperlink.Address =
+                "https://www.youtube.com/watch?v=JlI-xOhjiUQ";
             bgSlide.Left = 0;
             bgSlide.Top = 0;
             bgSlide.Width = pptPresentation.PageSetup.SlideWidth;
