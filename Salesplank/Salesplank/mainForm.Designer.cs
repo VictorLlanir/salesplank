@@ -2,7 +2,7 @@
 
 namespace Salesplank
 {
-    partial class mainForm
+    partial class MainForm
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,7 +30,7 @@ namespace Salesplank
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelLeftSide = new System.Windows.Forms.Panel();
             this.lblColorContracts = new System.Windows.Forms.Label();
             this.lblColorProposals = new System.Windows.Forms.Label();
@@ -42,8 +42,8 @@ namespace Salesplank
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblLine = new System.Windows.Forms.Label();
             this.lblSelected = new System.Windows.Forms.Label();
-            this.contractUserControl = new Salesplank.Controls.contractUserControl();
-            this.proposalUserControl = new Salesplank.Controls.proposalUserControl();
+            this.contractUserControl = new Salesplank.Controls.ContractUserControl();
+            this.proposalUserControl = new Salesplank.Controls.ProposalUserControl();
             this.panelLeftSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
@@ -188,7 +188,8 @@ namespace Salesplank
             // contractUserControl
             // 
             this.contractUserControl.Location = new System.Drawing.Point(161, 49);
-            this.contractUserControl.MinimumSize = new System.Drawing.Size(662, 352);
+            this.contractUserControl.MaximumSize = new System.Drawing.Size(662, 473);
+            this.contractUserControl.MinimumSize = new System.Drawing.Size(662, 473);
             this.contractUserControl.Name = "contractUserControl";
             this.contractUserControl.Size = new System.Drawing.Size(662, 473);
             this.contractUserControl.TabIndex = 7;
@@ -203,7 +204,7 @@ namespace Salesplank
             this.proposalUserControl.Size = new System.Drawing.Size(662, 473);
             this.proposalUserControl.TabIndex = 5;
             // 
-            // mainForm
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -216,7 +217,7 @@ namespace Salesplank
             this.Controls.Add(this.btnCloseSup);
             this.Controls.Add(this.panelLeftSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "mainForm";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelLeftSide.ResumeLayout(false);
@@ -239,9 +240,9 @@ namespace Salesplank
         private System.Windows.Forms.Label lblColorProposals;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblLine;
-        private Controls.proposalUserControl proposalUserControl;
+        private Controls.ProposalUserControl proposalUserControl;
         private System.Windows.Forms.Label lblSelected;
-        private Controls.contractUserControl contractUserControl;
+        private Controls.ContractUserControl contractUserControl;
     }
 }
 

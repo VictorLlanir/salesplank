@@ -1,6 +1,6 @@
 ﻿namespace Salesplank.Controls
 {
-    partial class proposalUserControl
+    partial class ProposalUserControl
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -338,7 +338,7 @@
             this.Margin = new System.Windows.Forms.Padding(10);
             this.MaximumSize = new System.Drawing.Size(662, 473);
             this.MinimumSize = new System.Drawing.Size(662, 473);
-            this.Name = "proposalUserControl";
+            this.Name = "ProposalUserControl";
             this.Size = new System.Drawing.Size(662, 473);
             this.gpbInitialData.ResumeLayout(false);
             this.gpbInitialData.PerformLayout();

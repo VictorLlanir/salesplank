@@ -1,6 +1,6 @@
 ﻿namespace Salesplank.Controls
 {
-    partial class contractUserControl
+    partial class ContractUserControl
     {
         /// <summary> 
         /// Variável de designer necessária.

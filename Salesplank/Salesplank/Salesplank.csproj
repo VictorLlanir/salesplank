@@ -68,39 +68,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\contractUserControl.cs">
+    <Compile Include="Controls\ContractUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\contractUserControl.Designer.cs">
-      <DependentUpon>contractUserControl.cs</DependentUpon>
+    <Compile Include="Controls\ContractUserControl.Designer.cs">
+      <DependentUpon>ContractUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\proposalUserControl.cs">
+    <Compile Include="Controls\ProposalUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\proposalUserControl.Designer.cs">
-      <DependentUpon>proposalUserControl.cs</DependentUpon>
+    <Compile Include="Controls\ProposalUserControl.Designer.cs">
+      <DependentUpon>ProposalUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Action.cs" />
     <Compile Include="Entities\Project.cs" />
     <Compile Include="Enums\EActionType.cs" />
     <Compile Include="Enums\EProjectType.cs" />
     <Compile Include="Helpers\EnumHelper.cs" />
-    <Compile Include="mainForm.cs">
+    <Compile Include="Inputs\FormDataInput.cs" />
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainForm.Designer.cs">
-      <DependentUpon>mainForm.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Controls\contractUserControl.resx">
-      <DependentUpon>contractUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ContractUserControl.resx">
+      <DependentUpon>ContractUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\proposalUserControl.resx">
-      <DependentUpon>proposalUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ProposalUserControl.resx">
+      <DependentUpon>ProposalUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainForm.resx">
-      <DependentUpon>mainForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -160,5 +161,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

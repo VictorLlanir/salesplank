@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace Salesplank
 {
-    public partial class mainForm : Form
+    public partial class MainForm : Form
     {
-        public mainForm()
+        public MainForm()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
@@ -14,7 +14,7 @@ namespace Salesplank
             lblTitle.BringToFront();
             lblLine.BringToFront();
             lblSelected.BringToFront();
-            lblSelected.Text = "Bem-vindo";
+            lblSelected.Text = @"Bem-vindo";
             lblColorContracts.Visible = false;
             lblColorProposals.Visible = false;
             proposalUserControl.Visible = false;
@@ -26,7 +26,7 @@ namespace Salesplank
         private void btnClose_Click(object sender, EventArgs e) => Close();
         private void btnProposals_Click(object sender, EventArgs e)
         {
-            lblSelected.Text = "Propostas";
+            lblSelected.Text = @"Propostas";
             lblColorContracts.Visible = false;
             lblColorProposals.Visible = true;
             contractUserControl.Visible = false;
@@ -34,7 +34,7 @@ namespace Salesplank
         }
         private void btnContracts_Click(object sender, EventArgs e)
         {
-            lblSelected.Text = "Contratos";
+            lblSelected.Text = @"Contratos";
             lblColorProposals.Visible = false;
             lblColorContracts.Visible = true;
             proposalUserControl.Visible = false;

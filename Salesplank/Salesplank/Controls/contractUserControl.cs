@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Salesplank.Controls
 {
-    public partial class contractUserControl : UserControl
+    public partial class ContractUserControl : UserControl
     {
-        public contractUserControl()
+        public ContractUserControl()
         {
             InitializeComponent();
         }
