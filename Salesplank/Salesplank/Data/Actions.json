@@ -1,64 +1,55 @@
 [
+  // Brain Content
   {
     "name": "Plenária",
-    "image": "path/to/image",
+    "image": "brain/content/plenaria.jpg",
     "projectType": 1,
     "actionType": 1
   },
   {
-    "name": "Mediação de Painel",
-    "image": "path/to/image",
-    "projectType": 1,
-    "actionType": 1
-  },
-  {
-    "name": "Warm Up Session",
-    "image": "path/to/image",
+    "name": "Painel de Debates",
+    "image": "brain/content/painel_de_debates.jpg",
     "projectType": 1,
     "actionType": 1
   },
   {
     "name": "PMV",
-    "image": "path/to/image",
+    "image": "brain/content/pmv.jpg",
     "projectType": 1,
     "actionType": 1
   },
   {
     "name": "Connection Session",
-    "image": "path/to/image",
+    "image": "brain/content/connection_session.jpg",
     "projectType": 1,
     "actionType": 1
   },
-  {
-    "name": "Connection Session Exclusive",
-    "image": "path/to/image",
-    "projectType": 1,
-    "actionType": 1
-  },
+  // Brain Relationship
   {
     "name": "VIP Meeting",
-    "image": "path/to/image",
-    "projectType": 1,
-    "actionType": 2
-  },
-  {
-    "name": "VIP Meeting Master",
-    "image": "path/to/image",
+    "image": "brain/relationship/vip_meeting.jpg",
     "projectType": 1,
     "actionType": 2
   },
   {
     "name": "Almoço",
-    "image": "path/to/image",
+    "image": "brain/relationship/almoco.jpg",
     "projectType": 1,
     "actionType": 2
   },
   {
     "name": "Coffee Break",
-    "image": "path/to/image",
+    "image": "brain/relationship/coffee_break.jpg",
     "projectType": 1,
     "actionType": 2
   },
+  {
+    "name": "Happy Hour",
+    "image": "brain/relationship/happy_hour.jpg",
+    "projectType": 1,
+    "actionType": 2
+  },
+  // Brain Branding
   {
     "name": "Exposição Eletrônica",
     "image": "path/to/image",

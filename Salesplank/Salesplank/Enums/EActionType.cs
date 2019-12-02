@@ -6,9 +6,9 @@ namespace Salesplank.Enums
     {
         [Description("Conteúdo")]
         Content = 1,
-        [Description("Conteúdo")]
+        [Description("Relacionamento")]
         Relationship = 2,
-        [Description("Conteúdo")]
+        [Description("Branding")]
         Branding = 3
     }
 }

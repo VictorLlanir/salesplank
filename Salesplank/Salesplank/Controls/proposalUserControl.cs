@@ -13,6 +13,7 @@ using Microsoft.Office.Interop.PowerPoint;
 using Microsoft.Office.Core;
 using Salesplank.Inputs;
 using Application = Microsoft.Office.Interop.PowerPoint.Application;
+using Salesplank.Helpers;
 
 namespace Salesplank.Controls
 {
@@ -22,7 +23,7 @@ namespace Salesplank.Controls
         private static List<Action> _actionList = new List<Action>();
         private static string _logoPath;
         private static string _ebdiLogoPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\logo_ebdi.png";
-        private static string _oqueNaoSomosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_nao_somos.jpg";
+        private static string _oQueNaoSomosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_nao_somos.jpg";
         private static string _oQueSomosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_somos.jpg";
         private static string _comoFazemosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\como_fazemos.jpg";
         private static string _oQueQueremosProporcionarPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_queremos_proporcionar.jpg";
@@ -108,15 +109,15 @@ namespace Salesplank.Controls
         private void PopulateActionCheckListBoxes(EProjectType projectType)
         {
             clbActionsBranding.Items.Clear();
-            var actionsBranding = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Branding).Select(p => p.Name).ToList();
+            var actionsBranding = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Branding).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
             clbActionsBranding.Items.AddRange(actionsBranding.Cast<string>().ToArray());
 
             clbActionsContent.Items.Clear();
-            var actionsContent = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Content).Select(p => p.Name).ToList();
+            var actionsContent = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Content).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
             clbActionsContent.Items.AddRange(actionsContent.Cast<string>().ToArray());
 
             clbActionsRelationship.Items.Clear();
-            var actionsRelationship = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Relationship).Select(p => p.Name).ToList();
+            var actionsRelationship = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Relationship).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
             clbActionsRelationship.Items.AddRange(actionsRelationship.Cast<string>().ToArray());
         }
         private void PopulateProjectList()
@@ -187,7 +188,7 @@ namespace Salesplank.Controls
                 ebdiLogo.Left = 500;
                 ebdiLogo.Top = 400;
 
-                AddSlideWithImage(pptPresentation, slides, 2, textLayout, _oqueNaoSomosPath);
+                AddSlideWithImage(pptPresentation, slides, 2, textLayout, _oQueNaoSomosPath);
                 AddSlideWithImage(pptPresentation, slides, 3, textLayout, _oQueSomosPath);
                 AddSlideWithImage(pptPresentation, slides, 4, textLayout, _comoFazemosPath);
                 AddSlideWithImage(pptPresentation, slides, 5, textLayout, _oQueQueremosProporcionarPath);
@@ -209,7 +210,7 @@ namespace Salesplank.Controls
                 }
                 foreach (var action in actions)
                 {
-                    
+
                 }
 
                 pptPresentation.SaveAs($@"C:\Users\VictorTrevisan\Desktop\Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
