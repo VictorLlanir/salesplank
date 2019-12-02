@@ -37,17 +37,11 @@ namespace Salesplank.Controls
             PopulateActionList();
         }
         // Eventos
-        private void rdbBrainInteracivity_CheckedChanged(object sender, EventArgs e)
+        private void rdbSabBrainInteracivity_CheckedChanged(object sender, EventArgs e)
         {
-            PopulateProjectCheckListBox(EProjectType.BrainInteractivity);
-            PopulateActionCheckListBoxes(EProjectType.BrainInteractivity);
+            PopulateProjectCheckListBox();
+            PopulateActionCheckListBoxes();
             _selectedModel = @"Brain Interactivity";
-        }
-        private void rdbSab_CheckedChanged(object sender, EventArgs e)
-        {
-            PopulateProjectCheckListBox(EProjectType.StrategicAdvisoryBoard);
-            PopulateActionCheckListBoxes(EProjectType.StrategicAdvisoryBoard);
-            _selectedModel = @"SAB";
         }
         private void rdbMade2Make_CheckedChanged(object sender, EventArgs e)
         {
@@ -68,9 +62,8 @@ namespace Salesplank.Controls
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
-            rdbBrainInteractivity.Checked = false;
+            rdbSabBrainInteractivity.Checked = false;
             rdbMade2Make.Checked = false;
-            rdbSab.Checked = false;
             ClearCheckListBoxes();
             txtSponsorName.Text = "";
             cbNumSponsors.SelectedItem = null;
@@ -100,24 +93,26 @@ namespace Salesplank.Controls
             }
         }
         // Meus métodos
-        private void PopulateProjectCheckListBox(EProjectType projectType)
+        private void PopulateProjectCheckListBox()
         {
             clbProjects.Items.Clear();
-            var projects = _projectList.Where(p => p.ProjectType == projectType).Select(p => p.Name).ToList();
+            var projects = new List<string>();
+            projects.AddRange(_projectList.Where(p => p.ProjectType == EProjectType.BrainInteractivity).Select(p => $"BI - {p.Name}"));
+            projects.AddRange(_projectList.Where(p => p.ProjectType == EProjectType.StrategicAdvisoryBoard).Select(p => $"SAB - {p.Name}"));
             clbProjects.Items.AddRange(projects.Cast<string>().ToArray());
         }
-        private void PopulateActionCheckListBoxes(EProjectType projectType)
+        private void PopulateActionCheckListBoxes()
         {
             clbActionsBranding.Items.Clear();
-            var actionsBranding = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Branding).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
+            var actionsBranding = _actionList.Where(p => p.ActionType == EActionType.Branding).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
             clbActionsBranding.Items.AddRange(actionsBranding.Cast<string>().ToArray());
 
             clbActionsContent.Items.Clear();
-            var actionsContent = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Content).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
+            var actionsContent = _actionList.Where(p => p.ActionType == EActionType.Content).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
             clbActionsContent.Items.AddRange(actionsContent.Cast<string>().ToArray());
 
             clbActionsRelationship.Items.Clear();
-            var actionsRelationship = _actionList.Where(p => p.ProjectType == projectType && p.ActionType == EActionType.Relationship).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
+            var actionsRelationship = _actionList.Where(p => p.ActionType == EActionType.Relationship).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
             clbActionsRelationship.Items.AddRange(actionsRelationship.Cast<string>().ToArray());
         }
         private void PopulateProjectList()

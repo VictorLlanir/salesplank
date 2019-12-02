@@ -42,8 +42,7 @@
             this.txtSponsorName = new System.Windows.Forms.TextBox();
             this.rdbMade2Make = new System.Windows.Forms.RadioButton();
             this.cbNumSponsors = new System.Windows.Forms.ComboBox();
-            this.rdbBrainInteractivity = new System.Windows.Forms.RadioButton();
-            this.rdbSab = new System.Windows.Forms.RadioButton();
+            this.rdbSabBrainInteractivity = new System.Windows.Forms.RadioButton();
             this.btnSelectSponsorLogo = new System.Windows.Forms.Button();
             this.gpbActions = new System.Windows.Forms.GroupBox();
             this.lblBrainBranding = new System.Windows.Forms.Label();
@@ -100,8 +99,7 @@
             this.gpbInitialData.Controls.Add(this.txtSponsorName);
             this.gpbInitialData.Controls.Add(this.rdbMade2Make);
             this.gpbInitialData.Controls.Add(this.cbNumSponsors);
-            this.gpbInitialData.Controls.Add(this.rdbBrainInteractivity);
-            this.gpbInitialData.Controls.Add(this.rdbSab);
+            this.gpbInitialData.Controls.Add(this.rdbSabBrainInteractivity);
             this.gpbInitialData.Controls.Add(this.btnSelectSponsorLogo);
             this.gpbInitialData.Font = new System.Drawing.Font("Effra", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbInitialData.Location = new System.Drawing.Point(15, 136);
@@ -218,29 +216,17 @@
             this.cbNumSponsors.Size = new System.Drawing.Size(131, 20);
             this.cbNumSponsors.TabIndex = 3;
             // 
-            // rdbBrainInteractivity
+            // rdbSabBrainInteractivity
             // 
-            this.rdbBrainInteractivity.AutoSize = true;
-            this.rdbBrainInteractivity.Location = new System.Drawing.Point(21, 77);
-            this.rdbBrainInteractivity.Name = "rdbBrainInteractivity";
-            this.rdbBrainInteractivity.Size = new System.Drawing.Size(101, 16);
-            this.rdbBrainInteractivity.TabIndex = 2;
-            this.rdbBrainInteractivity.TabStop = true;
-            this.rdbBrainInteractivity.Text = "Brain Interacivity";
-            this.rdbBrainInteractivity.UseVisualStyleBackColor = true;
-            this.rdbBrainInteractivity.CheckedChanged += new System.EventHandler(this.rdbBrainInteracivity_CheckedChanged);
-            // 
-            // rdbSab
-            // 
-            this.rdbSab.AutoSize = true;
-            this.rdbSab.Location = new System.Drawing.Point(136, 77);
-            this.rdbSab.Name = "rdbSab";
-            this.rdbSab.Size = new System.Drawing.Size(42, 16);
-            this.rdbSab.TabIndex = 1;
-            this.rdbSab.TabStop = true;
-            this.rdbSab.Text = "SAB";
-            this.rdbSab.UseVisualStyleBackColor = true;
-            this.rdbSab.CheckedChanged += new System.EventHandler(this.rdbSab_CheckedChanged);
+            this.rdbSabBrainInteractivity.AutoSize = true;
+            this.rdbSabBrainInteractivity.Location = new System.Drawing.Point(21, 77);
+            this.rdbSabBrainInteractivity.Name = "rdbSabBrainInteractivity";
+            this.rdbSabBrainInteractivity.Size = new System.Drawing.Size(130, 16);
+            this.rdbSabBrainInteractivity.TabIndex = 2;
+            this.rdbSabBrainInteractivity.TabStop = true;
+            this.rdbSabBrainInteractivity.Text = "SAB e Brain Interacivity";
+            this.rdbSabBrainInteractivity.UseVisualStyleBackColor = true;
+            this.rdbSabBrainInteractivity.CheckedChanged += new System.EventHandler(this.rdbSabBrainInteracivity_CheckedChanged);
             // 
             // btnSelectSponsorLogo
             // 
@@ -327,7 +313,7 @@
             // 
             this.ofdSelectLogo.FileName = "ofdLogo";
             // 
-            // proposalUserControl
+            // ProposalUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -356,8 +342,7 @@
         private System.Windows.Forms.TextBox txtSponsorName;
         private System.Windows.Forms.RadioButton rdbMade2Make;
         private System.Windows.Forms.ComboBox cbNumSponsors;
-        private System.Windows.Forms.RadioButton rdbBrainInteractivity;
-        private System.Windows.Forms.RadioButton rdbSab;
+        private System.Windows.Forms.RadioButton rdbSabBrainInteractivity;
         private System.Windows.Forms.Button btnSelectSponsorLogo;
         private System.Windows.Forms.Label lblSponsorName;
         private System.Windows.Forms.Label lblSelectProject;
