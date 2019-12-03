@@ -22,14 +22,15 @@ namespace Salesplank.Controls
         private static List<Project> _projectList = new List<Project>();
         private static List<Action> _actionList = new List<Action>();
         private static string _logoPath;
-        private static string _ebdiLogoPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\logo_ebdi.png";
-        private static string _oQueNaoSomosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_nao_somos.jpg";
-        private static string _oQueSomosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_somos.jpg";
-        private static string _comoFazemosPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\como_fazemos.jpg";
-        private static string _oQueQueremosProporcionarPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\o_que_queremos_proporcionar.jpg";
-        private static string _modeloBrainPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\modelo_brain.jpg";
-        private static string _modeloSabPath = @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\modelo_sab.jpg";
-        private static string _selectedModel;
+        private static string _bgPath = "bg.jpg";
+        private static string _ebdiLogoPath = "logo_ebdi.png";
+        private static string _oQueNaoSomosPath = "o_que_nao_somos.jpg";
+        private static string _oQueSomosPath = "o_que_somos.jpg";
+        private static string _comoFazemosPath = "como_fazemos.jpg";
+        private static string _oQueQueremosProporcionarPath = "o_que_queremos_proporcionar.jpg";
+        private static string _modeloBrainPath = "modelo_brain.jpg";
+        private static string _modeloSabPath = "modelo_sab.jpg";
+        private static string _workingDir = AppDomain.CurrentDomain.BaseDirectory;
         public ProposalUserControl()
         {
             InitializeComponent();
@@ -41,12 +42,10 @@ namespace Salesplank.Controls
         {
             PopulateProjectCheckListBox();
             PopulateActionCheckListBoxes();
-            _selectedModel = @"Brain Interactivity";
         }
         private void rdbMade2Make_CheckedChanged(object sender, EventArgs e)
         {
             ClearCheckListBoxes();
-            _selectedModel = @"Made 2 Make";
         }
         private void btnSelectSponsorLogo_Click(object sender, EventArgs e)
         {
@@ -81,7 +80,7 @@ namespace Salesplank.Controls
             }
             try
             {
-                var formDataInput = new FormDataInput(txtSponsorName.Text, _logoPath, _selectedModel, cbNumSponsors.Text, txtContact.Text, ckbGenerateEmail.Checked);
+                var formDataInput = new FormDataInput(txtSponsorName.Text, _logoPath, cbNumSponsors.Text, txtContact.Text, ckbGenerateEmail.Checked);
                 var selectedProjects = GetProjectList(clbProjects.CheckedItems);
                 var selectedActions = GetActionList(clbActionsBranding.CheckedItems, clbActionsContent.CheckedItems, clbActionsRelationship.CheckedItems);
                 Generate(formDataInput, selectedProjects, selectedActions);
@@ -97,22 +96,22 @@ namespace Salesplank.Controls
         {
             clbProjects.Items.Clear();
             var projects = new List<string>();
-            projects.AddRange(_projectList.Where(p => p.ProjectType == EProjectType.BrainInteractivity).Select(p => $"BI - {p.Name}"));
-            projects.AddRange(_projectList.Where(p => p.ProjectType == EProjectType.StrategicAdvisoryBoard).Select(p => $"SAB - {p.Name}"));
+            projects.AddRange(_projectList.Where(p => p.ProjectType == EProjectType.BrainInteractivity).Select(p => p.Name));
+            projects.AddRange(_projectList.Where(p => p.ProjectType == EProjectType.StrategicAdvisoryBoard).Select(p => p.Name));
             clbProjects.Items.AddRange(projects.Cast<string>().ToArray());
         }
         private void PopulateActionCheckListBoxes()
         {
             clbActionsBranding.Items.Clear();
-            var actionsBranding = _actionList.Where(p => p.ActionType == EActionType.Branding).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
+            var actionsBranding = _actionList.Where(p => p.ActionType == EActionType.Branding).Select(p => p.Name).ToList();
             clbActionsBranding.Items.AddRange(actionsBranding.Cast<string>().ToArray());
 
             clbActionsContent.Items.Clear();
-            var actionsContent = _actionList.Where(p => p.ActionType == EActionType.Content).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
+            var actionsContent = _actionList.Where(p => p.ActionType == EActionType.Content).Select(p => p.Name).ToList();
             clbActionsContent.Items.AddRange(actionsContent.Cast<string>().ToArray());
 
             clbActionsRelationship.Items.Clear();
-            var actionsRelationship = _actionList.Where(p => p.ActionType == EActionType.Relationship).Select(p => $"{p.Name} - {EnumHelper.GetDescription(p.ProjectType)}").ToList();
+            var actionsRelationship = _actionList.Where(p => p.ActionType == EActionType.Relationship).Select(p => p.Name).ToList();
             clbActionsRelationship.Items.AddRange(actionsRelationship.Cast<string>().ToArray());
         }
         private void PopulateProjectList()
@@ -160,7 +159,7 @@ namespace Salesplank.Controls
                 var pptPresentation = pptApplication.Presentations.Add(MsoTriState.msoTrue);
                 var slides = pptPresentation.Slides;
                 pptPresentation.SlideMaster.Shapes.AddPicture(
-                    @"C:\Users\VictorTrevisan\Source\Repos\VictorLlanir\salesplank\Salesplank\Salesplank\Images\bg.jpg",
+                    $"{_workingDir}/Images/{_bgPath}",
                     MsoTriState.msoTrue, MsoTriState.msoTrue, 0, 0, pptPresentation.PageSetup.SlideWidth,
                     pptPresentation.PageSetup.SlideHeight);
 
@@ -171,41 +170,57 @@ namespace Salesplank.Controls
                 var contactName = firstSlide.Shapes[1].TextFrame.TextRange;
                 firstSlide.Shapes[1].Left = 90;
                 firstSlide.Shapes[1].Top = 450;
-                firstSlide.Shapes[2].Visible = MsoTriState.msoFalse;
-                contactName.Text = formDataInput.Contact;
+                contactName.Text = $"A/C: {formDataInput.Contact}";
                 contactName.Font.Size = 24;
 
-                var sponsorLogo = firstSlide.Shapes.AddPicture(_logoPath, MsoTriState.msoTrue, MsoTriState.msoTrue, 100, 100);
-                sponsorLogo.Left = 60;
-                sponsorLogo.Top = 260;
+                firstSlide.Shapes[2].TextFrame.TextRange.Font.Size = 14;
+                firstSlide.Shapes[2].TextFrame.TextRange.ParagraphFormat.SpaceWithin = (float)0.4;
+                var first = 1;
+                foreach (var project in projects)
+                {
+                    if (first == 1)
+                        firstSlide.Shapes[2].TextFrame.TextRange.Text += $"{project.Name} - {project.Description}";
+                    else
+                        firstSlide.Shapes[2].TextFrame.TextRange.Text += $"\n{project.Name} - {project.Description}";
+                    first = 0;
+                }
+                if (_logoPath != null)
+                {
+                    var sponsorLogo = firstSlide.Shapes.AddPicture(_logoPath, MsoTriState.msoTrue, MsoTriState.msoTrue, 80, 80);
+                    sponsorLogo.Left = 40;
+                    sponsorLogo.Top = 190;
+                }
 
-                var ebdiLogo = firstSlide.Shapes.AddPicture(_ebdiLogoPath, MsoTriState.msoTrue, MsoTriState.msoTrue, 200, 260);
-                ebdiLogo.Left = 500;
+
+                var ebdiLogo = firstSlide.Shapes.AddPicture($"{_workingDir}/Images/{_ebdiLogoPath}", MsoTriState.msoTrue, MsoTriState.msoTrue, 180, 220);
+                ebdiLogo.Left = 480;
                 ebdiLogo.Top = 400;
 
-                AddSlideWithImage(pptPresentation, slides, 2, textLayout, _oQueNaoSomosPath);
-                AddSlideWithImage(pptPresentation, slides, 3, textLayout, _oQueSomosPath);
-                AddSlideWithImage(pptPresentation, slides, 4, textLayout, _comoFazemosPath);
-                AddSlideWithImage(pptPresentation, slides, 5, textLayout, _oQueQueremosProporcionarPath);
+                AddSlideWithImage(pptPresentation, slides, 2, textLayout, $"{_workingDir}/Images/{_oQueNaoSomosPath}");
+                AddSlideWithImage(pptPresentation, slides, 3, textLayout, $"{_workingDir}/Images/{_oQueSomosPath}");
+                AddSlideWithImage(pptPresentation, slides, 4, textLayout, $"{_workingDir}/Images/{_comoFazemosPath}");
+                AddSlideWithImage(pptPresentation, slides, 5, textLayout, $"{_workingDir}/Images/{_oQueQueremosProporcionarPath}");
                 var pageNum = 6;
                 if (projects.Count(p => p.ProjectType == EProjectType.BrainInteractivity) > 0)
                 {
-                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, _modeloBrainPath);
+                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{_modeloBrainPath}");
                     pageNum++;
                 }
-                if (projects.Count(p => p.ProjectType == EProjectType.BrainInteractivity) > 0)
+                if (projects.Count(p => p.ProjectType == EProjectType.StrategicAdvisoryBoard) > 0)
                 {
-                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, _modeloSabPath);
+                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{ _modeloSabPath}");
                     pageNum++;
                 }
 
                 foreach (var project in projects)
                 {
-
+                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{project.Image}");
+                    pageNum++;
                 }
                 foreach (var action in actions)
                 {
-
+                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{action.Image}");
+                    pageNum++;
                 }
 
                 pptPresentation.SaveAs($@"C:\Users\VictorTrevisan\Desktop\Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
