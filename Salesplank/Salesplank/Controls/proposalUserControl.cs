@@ -13,6 +13,7 @@ using Microsoft.Office.Interop.PowerPoint;
 using Microsoft.Office.Core;
 using Salesplank.Inputs;
 using Application = Microsoft.Office.Interop.PowerPoint.Application;
+using System.Drawing;
 
 namespace Salesplank.Controls
 {
@@ -30,6 +31,7 @@ namespace Salesplank.Controls
         private static string _modeloBrainPath = "modelo_brain.jpg";
         private static string _modeloSabPath = "modelo_sab.jpg";
         private static string _contrapartidasAdicionaisPath = "contrapartidas_adicionais.jpg";
+        private static string _contraCapaPath = "contra_capa.jpg";
         private static string _desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         private static string _workingDir = AppDomain.CurrentDomain.BaseDirectory;
         public ProposalUserControl()
@@ -37,6 +39,7 @@ namespace Salesplank.Controls
             InitializeComponent();
             PopulateProjectList();
             PopulateActionList();
+            Directory.CreateDirectory($"{_desktopPath}/Propostas");
         }
         // Eventos
         private void rdbSabBrainInteracivity_CheckedChanged(object sender, EventArgs e)
@@ -79,7 +82,10 @@ namespace Salesplank.Controls
                 var formDataInput = new FormDataInput(txtSponsorName.Text, _logoPath, cbNumSponsors.Text, txtContact.Text, ckbGenerateEmail.Checked);
                 var selectedProjects = GetProjectList(clbProjects.CheckedItems);
                 var selectedActions = GetActionList(clbActionsBranding.CheckedItems, clbActionsContent.CheckedItems, clbActionsRelationship.CheckedItems);
-                Generate(formDataInput, selectedProjects, selectedActions);
+                if (rdbSabBrainInteractivity.Checked == true)
+                    Generate(formDataInput, selectedProjects, selectedActions);
+                else
+                    Generate(formDataInput);
             }
             catch (Exception exception)
             {
@@ -111,7 +117,6 @@ namespace Salesplank.Controls
         }
         private void PopulateProjectList()
         {
-            //var streamReader = new StreamReader(@"C:\Users\Victor\source\repos\VictorLlanir\salesplank\Salesplank\Salesplank\Data\Projects.json", Encoding.UTF8);
             var streamReader = new StreamReader($"{_workingDir}/Data/Projects.json", Encoding.UTF8);
             var json = streamReader.ReadToEnd();
             _projectList = JsonConvert.DeserializeObject<List<Project>>(json);
@@ -216,9 +221,35 @@ namespace Salesplank.Controls
                 }
                 AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{_contrapartidasAdicionaisPath}", "", formDataInput);
                 pageNum++;
+                AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{_contraCapaPath}");
+
                 pptPresentation.SaveAs($"{_desktopPath}/Propostas/Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
+
                 //pptPresentation.Close();
-                //pptApplication.Quit();
+                pptApplication.Quit();
+            }
+            else
+            {
+                var pptApplication = new Application();
+                var pptPresentation = pptApplication.Presentations.Add(MsoTriState.msoTrue);
+                var slides = pptPresentation.Slides;
+
+                var textLayout = pptPresentation.SlideMaster.CustomLayouts[PpSlideLayout.ppLayoutText];
+                AddSlideWithImage(pptPresentation, slides, 1, textLayout, $"{_workingDir}/Images/projects/made2make/capa.jpg");
+                AddSlideWithImage(pptPresentation, slides, 2, textLayout, $"{_workingDir}/Images/{_oQueNaoSomosPath}");
+                AddSlideWithImage(pptPresentation, slides, 3, textLayout, $"{_workingDir}/Images/{_oQueSomosPath}");
+                AddSlideWithImage(pptPresentation, slides, 4, textLayout, $"{_workingDir}/Images/{_comoFazemosPath}");
+                AddSlideWithImage(pptPresentation, slides, 5, textLayout, $"{_workingDir}/Images/{_oQueQueremosProporcionarPath}");
+                AddSlideWithImage(pptPresentation, slides, 6, textLayout, $"{_workingDir}/Images/projects/made2make/modelo_made2make.jpg");
+                AddSlideWithImage(pptPresentation, slides, 7, textLayout, $"{_workingDir}/Images/projects/made2make/sua_proposta.jpg");
+                AddSlideWithImage(pptPresentation, slides, 8, textLayout, $"{_workingDir}/Images/projects/made2make/contrapartidas_investimento.jpg", "", formDataInput);
+                AddSlideWithImage(pptPresentation, slides, 9, textLayout, $"{_workingDir}/Images/projects/made2make/contra_capa.jpg");
+
+                pptPresentation.SaveAs($"{_desktopPath}/Propostas/Proposta Made2Make - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
+
+                //pptPresentation.Close();
+                pptApplication.Quit();
+
             }
         }
         private static void AddSlideWithImage(Presentation pptPresentation, Slides slides, int index, CustomLayout layout, string path, string projectDate = "", FormDataInput formDataInput = null)
@@ -256,6 +287,62 @@ namespace Salesplank.Controls
                 valueInvestment.TextFrame.TextRange.Font.Size = 22;
                 valueInvestment.TextFrame.TextRange.Font.Name = "Effra";
                 valueInvestment.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+            }
+            if (path.Contains("sua_proposta"))
+            {
+                if (_logoPath != "")
+                {
+                    var sponsorLogo = slide.Shapes.AddPicture(_logoPath, MsoTriState.msoTrue, MsoTriState.msoTrue, 175, 220);
+                    sponsorLogo.Width = 450;
+                    sponsorLogo.Left = 350;
+                    sponsorLogo.Top = 120;
+                }
+
+                var valueInvestment = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 350, 450, 400, 100);
+                valueInvestment.TextFrame.TextRange.Text = "INVESTIMENTO: R$ VALOR";
+                valueInvestment.TextFrame.TextRange.Font.Size = 30;
+                valueInvestment.TextFrame.TextRange.Font.Name = "Effra";
+                valueInvestment.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+            }
+            if (path.Contains("contrapartidas_investimento"))
+            {
+                var numGuests = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 80, 243, 150, 80);
+                numGuests.TextFrame.TextRange.Text = "XX participantes";
+                numGuests.TextFrame.TextRange.Font.Size = 12;
+                numGuests.TextFrame.TextRange.Font.Name = "Effra";
+                numGuests.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+
+                var numSponsors = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 80, 292, 150, 80);
+                numSponsors.TextFrame.TextRange.Text = $"{formDataInput.NumSponsors} inscrições";
+                numSponsors.TextFrame.TextRange.Font.Size = 12;
+                numSponsors.TextFrame.TextRange.Font.Name = "Effra";
+                numSponsors.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+
+                if (_logoPath != "")
+                {
+                    var sponsorLogo = slide.Shapes.AddPicture(_logoPath, MsoTriState.msoTrue, MsoTriState.msoTrue, 175, 230);
+                    sponsorLogo.Width = 300;
+                    sponsorLogo.Left = 550;
+                    sponsorLogo.Top = 220;
+                }
+            }
+            if (path.Contains("made2make") && path.Contains("capa") && !path.Contains("contra_capa"))
+            {
+                var numSponsors = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 59, 430, 240, 80);
+                numSponsors.TextFrame.TextRange.Text = "seu_email@ebdicorp.com.br";
+                numSponsors.TextFrame.TextRange.Font.Size = 14;
+                numSponsors.TextFrame.TextRange.Font.Name = "Effra";
+                numSponsors.TextFrame.TextRange.Font.Bold = MsoTriState.msoFalse;
+                numSponsors.TextFrame.TextRange.Font.Color.RGB = Color.White.ToArgb();
+            }
+            if (path.Contains("made2make") && path.Contains("contra_capa"))
+            {
+                var numSponsors = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 140, 160, 240, 80);
+                numSponsors.TextFrame.TextRange.Text = "(00) 0000-0000";
+                numSponsors.TextFrame.TextRange.Font.Size = 16;
+                numSponsors.TextFrame.TextRange.Font.Name = "Effra";
+                numSponsors.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+                numSponsors.TextFrame.TextRange.Font.Color.RGB = Color.White.ToArgb();
             }
         }
     }
