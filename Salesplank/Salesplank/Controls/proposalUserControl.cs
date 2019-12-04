@@ -13,7 +13,6 @@ using Microsoft.Office.Interop.PowerPoint;
 using Microsoft.Office.Core;
 using Salesplank.Inputs;
 using Application = Microsoft.Office.Interop.PowerPoint.Application;
-using Salesplank.Helpers;
 
 namespace Salesplank.Controls
 {
@@ -30,6 +29,8 @@ namespace Salesplank.Controls
         private static string _oQueQueremosProporcionarPath = "o_que_queremos_proporcionar.jpg";
         private static string _modeloBrainPath = "modelo_brain.jpg";
         private static string _modeloSabPath = "modelo_sab.jpg";
+        private static string _contrapartidasAdicionaisPath = "contrapartidas_adicionais.jpg";
+        private static string _desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         private static string _workingDir = AppDomain.CurrentDomain.BaseDirectory;
         public ProposalUserControl()
         {
@@ -73,11 +74,6 @@ namespace Salesplank.Controls
         }
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            if (!IsValid())
-            {
-                MessageBox.Show(@"Preencha os dados corretamente!", @"Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
             try
             {
                 var formDataInput = new FormDataInput(txtSponsorName.Text, _logoPath, cbNumSponsors.Text, txtContact.Text, ckbGenerateEmail.Checked);
@@ -88,7 +84,6 @@ namespace Salesplank.Controls
             catch (Exception exception)
             {
                 Console.WriteLine(exception.Message);
-                throw;
             }
         }
         // Meus métodos
@@ -117,14 +112,13 @@ namespace Salesplank.Controls
         private void PopulateProjectList()
         {
             //var streamReader = new StreamReader(@"C:\Users\Victor\source\repos\VictorLlanir\salesplank\Salesplank\Salesplank\Data\Projects.json", Encoding.UTF8);
-            var streamReader = new StreamReader(@"C:\Users\VictorTrevisan\source\repos\VictorLlanir\salesplank\Salesplank\Salesplank\Data\Projects.json", Encoding.UTF8);
+            var streamReader = new StreamReader($"{_workingDir}/Data/Projects.json", Encoding.UTF8);
             var json = streamReader.ReadToEnd();
             _projectList = JsonConvert.DeserializeObject<List<Project>>(json);
         }
         private static void PopulateActionList()
         {
-            var streamReader = new StreamReader(@"C:\Users\VictorTrevisan\source\repos\VictorLlanir\salesplank\Salesplank\Salesplank\Data\Actions.json", Encoding.UTF8);
-            //var streamReader = new StreamReader(@"C:\Users\Victor\source\repos\VictorLlanir\salesplank\Salesplank\Salesplank\Data\Actions.json", Encoding.UTF8);
+            var streamReader = new StreamReader($"{_workingDir}/Data/Actions.json", Encoding.UTF8);
             var json = streamReader.ReadToEnd();
             _actionList = JsonConvert.DeserializeObject<List<Action>>(json);
         }
@@ -134,10 +128,6 @@ namespace Salesplank.Controls
             clbActionsBranding.Items.Clear();
             clbActionsContent.Items.Clear();
             clbActionsRelationship.Items.Clear();
-        }
-        private static bool IsValid()
-        {
-            return true;
         }
         private static List<Project> GetProjectList(IEnumerable checkedProjects)
         {
@@ -173,8 +163,8 @@ namespace Salesplank.Controls
                 contactName.Text = $"A/C: {formDataInput.Contact}";
                 contactName.Font.Size = 24;
 
-                firstSlide.Shapes[2].TextFrame.TextRange.Font.Size = 14;
-                firstSlide.Shapes[2].TextFrame.TextRange.ParagraphFormat.SpaceWithin = (float)0.4;
+                firstSlide.Shapes[2].TextFrame.TextRange.Font.Size = 17;
+                firstSlide.Shapes[2].TextFrame.TextRange.ParagraphFormat.SpaceWithin = (float)0.8;
                 var first = 1;
                 foreach (var project in projects)
                 {
@@ -187,13 +177,15 @@ namespace Salesplank.Controls
                 if (_logoPath != null)
                 {
                     var sponsorLogo = firstSlide.Shapes.AddPicture(_logoPath, MsoTriState.msoTrue, MsoTriState.msoTrue, 80, 80);
+                    sponsorLogo.Width = 300;
                     sponsorLogo.Left = 40;
-                    sponsorLogo.Top = 190;
+                    sponsorLogo.Top = 400;
                 }
 
 
                 var ebdiLogo = firstSlide.Shapes.AddPicture($"{_workingDir}/Images/{_ebdiLogoPath}", MsoTriState.msoTrue, MsoTriState.msoTrue, 180, 220);
-                ebdiLogo.Left = 480;
+                ebdiLogo.Width = 300;
+                ebdiLogo.Left = 550;
                 ebdiLogo.Top = 400;
 
                 AddSlideWithImage(pptPresentation, slides, 2, textLayout, $"{_workingDir}/Images/{_oQueNaoSomosPath}");
@@ -214,7 +206,7 @@ namespace Salesplank.Controls
 
                 foreach (var project in projects)
                 {
-                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{project.Image}");
+                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{project.Image}", project.Date);
                     pageNum++;
                 }
                 foreach (var action in actions)
@@ -222,13 +214,14 @@ namespace Salesplank.Controls
                     AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{action.Image}");
                     pageNum++;
                 }
-
-                pptPresentation.SaveAs($@"C:\Users\VictorTrevisan\Desktop\Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
+                AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{_workingDir}/Images/{_contrapartidasAdicionaisPath}", "", formDataInput);
+                pageNum++;
+                pptPresentation.SaveAs($"{_desktopPath}/Propostas/Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
                 //pptPresentation.Close();
                 //pptApplication.Quit();
             }
         }
-        private static void AddSlideWithImage(Presentation pptPresentation, Slides slides, int index, CustomLayout layout, string path)
+        private static void AddSlideWithImage(Presentation pptPresentation, Slides slides, int index, CustomLayout layout, string path, string projectDate = "", FormDataInput formDataInput = null)
         {
             var slide = slides.AddSlide(index, layout);
             slide.Shapes[1].Visible = MsoTriState.msoFalse;
@@ -242,6 +235,28 @@ namespace Salesplank.Controls
             bgSlide.Top = 0;
             bgSlide.Width = pptPresentation.PageSetup.SlideWidth;
             bgSlide.Height = pptPresentation.PageSetup.SlideHeight;
+            if (projectDate != "")
+            {
+                var dateText = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 310, 260, 600, 100);
+                dateText.TextFrame.TextRange.Text = $"DIAS: {projectDate.ToUpper()}";
+                dateText.TextFrame.TextRange.Font.Size = 26;
+                dateText.TextFrame.TextRange.Font.Name = "Effra";
+                dateText.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+            }
+            if (path.Contains(_contrapartidasAdicionaisPath))
+            {
+                var numSponsors = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 163, 115, 150, 80);
+                numSponsors.TextFrame.TextRange.Text = formDataInput.NumSponsors;
+                numSponsors.TextFrame.TextRange.Font.Size = 16;
+                numSponsors.TextFrame.TextRange.Font.Name = "Effra";
+                numSponsors.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+
+                var valueInvestment = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 420, 450, 250, 100);
+                valueInvestment.TextFrame.TextRange.Text = "VALOR";
+                valueInvestment.TextFrame.TextRange.Font.Size = 22;
+                valueInvestment.TextFrame.TextRange.Font.Name = "Effra";
+                valueInvestment.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+            }
         }
     }
 }
