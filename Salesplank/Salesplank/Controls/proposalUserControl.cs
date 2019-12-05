@@ -10,10 +10,12 @@ using Salesplank.Entities;
 using Salesplank.Enums;
 using Action = Salesplank.Entities.Action;
 using Microsoft.Office.Interop.PowerPoint;
+using Microsoft.Office.Interop.Outlook;
 using Microsoft.Office.Core;
 using Salesplank.Inputs;
 using Application = Microsoft.Office.Interop.PowerPoint.Application;
 using System.Drawing;
+using Exception = System.Exception;
 
 namespace Salesplank.Controls
 {
@@ -75,21 +77,32 @@ namespace Salesplank.Controls
             lblLogoPath.Text = "";
             ofdSelectLogo.Dispose();
         }
-        private void btnGenerate_Click(object sender, EventArgs e)
+         private void btnGenerate_Click(object sender, EventArgs e)
         {
             try
             {
                 var formDataInput = new FormDataInput(txtSponsorName.Text, LogoPath, cbNumSponsors.Text, txtContact.Text, ckbGenerateEmail.Checked);
                 var selectedProjects = GetProjectList(clbProjects.CheckedItems);
                 var selectedActions = GetActionList(clbActionsBranding.CheckedItems, clbActionsContent.CheckedItems, clbActionsRelationship.CheckedItems);
+
+                var proposalInput = new ProposalInput();
                 if (rdbSabBrainInteractivity.Checked)
-                    Generate(formDataInput, selectedProjects, selectedActions);
+                    proposalInput = Generate(formDataInput, selectedProjects, selectedActions);
                 else
-                    Generate(formDataInput);
+                    proposalInput = Generate(formDataInput);
+
+                //if (formDataInput.GenerateEmail)
+                //{
+                //    var outlookApp = new Microsoft.Office.Interop.Outlook.Application();
+                //    var mail = outlookApp.CreateItem(OlItemType.olMailItem) as MailItem;
+                //    mail.Subject = $"Proposta {proposalInput.FormDataInput.SponsorName}";
+                //    mail.Attachments.Add(proposalInput.Path, OlAttachmentType.olByValue, Type.Missing, Type.Missing);
+                //    mail.Save();
+                //}
             }
             catch (Exception exception)
             {
-                Console.WriteLine(exception.Message);
+                MessageBox.Show(exception.Message, "Ocorreu um erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         // Meus métodos
@@ -146,7 +159,7 @@ namespace Salesplank.Controls
 
             return actionList;
         }
-        private static void Generate(FormDataInput formDataInput, List<Project> projects = null, List<Action> actions = null)
+        private static ProposalInput Generate(FormDataInput formDataInput, List<Project> projects = null, List<Action> actions = null)
         {
             if (projects != null && actions != null)
             {
@@ -211,7 +224,7 @@ namespace Salesplank.Controls
 
                 foreach (var project in projects)
                 {
-                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{project.Image}", project.Date);
+                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{project.Image}", project);
                     pageNum++;
                 }
                 foreach (var action in actions)
@@ -219,14 +232,17 @@ namespace Salesplank.Controls
                     AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{action.Image}");
                     pageNum++;
                 }
-                AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{ContrapartidasAdicionaisPath}", "", formDataInput);
+                AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{ContrapartidasAdicionaisPath}", null, formDataInput);
                 pageNum++;
                 AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{ContraCapaPath}");
 
-                pptPresentation.SaveAs($"{DesktopPath}/Propostas/Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
+                var proposalPath =
+                    $"{DesktopPath}/Propostas/Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx";
+                pptPresentation.SaveAs(proposalPath, PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
 
                 //pptPresentation.Close();
                 pptApplication.Quit();
+                return new ProposalInput(proposalPath, formDataInput);
             }
             else
             {
@@ -242,17 +258,19 @@ namespace Salesplank.Controls
                 AddSlideWithImage(pptPresentation, slides, 5, textLayout, $"{WorkingDir}/Images/{OQueQueremosProporcionarPath}");
                 AddSlideWithImage(pptPresentation, slides, 6, textLayout, $"{WorkingDir}/Images/projects/made2make/modelo_made2make.jpg");
                 AddSlideWithImage(pptPresentation, slides, 7, textLayout, $"{WorkingDir}/Images/projects/made2make/sua_proposta.jpg");
-                AddSlideWithImage(pptPresentation, slides, 8, textLayout, $"{WorkingDir}/Images/projects/made2make/contrapartidas_investimento.jpg", "", formDataInput);
+                AddSlideWithImage(pptPresentation, slides, 8, textLayout, $"{WorkingDir}/Images/projects/made2make/contrapartidas_investimento.jpg", null, formDataInput);
                 AddSlideWithImage(pptPresentation, slides, 9, textLayout, $"{WorkingDir}/Images/projects/made2make/contra_capa.jpg");
 
-                pptPresentation.SaveAs($"{DesktopPath}/Propostas/Proposta Made2Make - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx", PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
+                var proposalPath =
+                    $"{DesktopPath}/Propostas/Proposta Made2Make - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx";
+                pptPresentation.SaveAs(proposalPath, PpSaveAsFileType.ppSaveAsDefault, MsoTriState.msoTrue);
 
                 //pptPresentation.Close();
                 pptApplication.Quit();
-
+                return new ProposalInput(proposalPath, formDataInput);
             }
         }
-        private static void AddSlideWithImage(Presentation pptPresentation, Slides slides, int index, CustomLayout layout, string path, string projectDate = "", FormDataInput formDataInput = null)
+        private static void AddSlideWithImage(Presentation pptPresentation, Slides slides, int index, CustomLayout layout, string path, Project project = null, FormDataInput formDataInput = null)
         {
             var slide = slides.AddSlide(index, layout);
             slide.Shapes[1].Visible = MsoTriState.msoFalse;
@@ -266,13 +284,15 @@ namespace Salesplank.Controls
             bgSlide.Top = 0;
             bgSlide.Width = pptPresentation.PageSetup.SlideWidth;
             bgSlide.Height = pptPresentation.PageSetup.SlideHeight;
-            if (projectDate != "")
+            if (project != null)
             {
                 var dateText = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 310, 260, 600, 100);
-                dateText.TextFrame.TextRange.Text = $"DIAS: {projectDate.ToUpper()}";
+                dateText.TextFrame.TextRange.Text = $"DIAS: {project.Date.ToUpper()}";
                 dateText.TextFrame.TextRange.Font.Size = 26;
                 dateText.TextFrame.TextRange.Font.Name = "Effra";
                 dateText.TextFrame.TextRange.Font.Bold = MsoTriState.msoTrue;
+                if (project.Link != "")
+                    bgSlide.ActionSettings[PpMouseActivation.ppMouseClick].Hyperlink.Address = project.Link;
             }
             if (path.Contains(ContrapartidasAdicionaisPath))
             {

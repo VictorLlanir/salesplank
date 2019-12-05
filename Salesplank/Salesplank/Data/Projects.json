@@ -5,7 +5,8 @@
     "description": "Conheça seu público e mantenha suas estratégias alinhadas para potencializar a experiência do cliente.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "29 e 30 de janeiro"
+    "date": "29 e 30 de janeiro",
+    "link": "https://www.youtube.com/watch?v=a5medfKj5jY"
   },
   {
     "name": "HR Mind Move",
@@ -13,7 +14,8 @@
     "description": "Como as experiências de aprendizagem impactam no resultado da sua companhia? Discuta a gestão do DHO.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "19 e 20 de fevereiro"
+    "date": "19 e 20 de fevereiro",
+    "link": "https://www.youtube.com/watch?v=SsZUgiwj4Uk"
   },
   {
     "name": "Data Analytics Innovation",
@@ -21,7 +23,8 @@
     "description": "Potencialize suas estratégias através da inovação em dados!",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "04 e 05 de março"
+    "date": "04 e 05 de março",
+    "link": "https://www.youtube.com/watch?v=EDjiEFLVbUc"
   },
   {
     "name": "Future Pay",
@@ -29,7 +32,8 @@
     "description": "O futuro dos meios de pagamento é agora. Você está pronto?",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "18 e 19 de março"
+    "date": "18 e 19 de março",
+    "link": "https://www.youtube.com/watch?v=_ZTAKwYwBI4"
   },
   {
     "name": "Business Innovation",
@@ -37,7 +41,8 @@
     "description": "Você sabe os impactos da inovação dentro da sua companhia? Vamos juntos nos tornar inovadores!",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "18 e 19 de março"
+    "date": "18 e 19 de março",
+    "link": "https://www.youtube.com/watch?v=8gQB6SPjlDA"
   },
   {
     "name": "Customer After Sales Services",
@@ -45,7 +50,8 @@
     "description": "Estratégias para tornar a experiência no pós-venda tão agradável que garantirá fidelidade e propagação da sua marca.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "08 e 09 de abril"
+    "date": "08 e 09 de abril",
+    "link": "https://www.youtube.com/watch?v=ouxwOy0BHs4"
   },
   {
     "name": "Shared Services",
@@ -53,7 +59,8 @@
     "description": "Vamos falar sobre como continuar inovando com o seu CSC?",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "06, 07 e 08 de maio"
+    "date": "06, 07 e 08 de maio",
+    "link": "https://www.youtube.com/watch?v=Mku5ViSt5m0"
   },
   {
     "name": "Human Resources",
@@ -61,7 +68,8 @@
     "description": "Quais os principais desafios dos gestores de Recursos Humanos?",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "22, 23 e 24 de abril"
+    "date": "22, 23 e 24 de abril",
+    "link": "https://www.youtube.com/watch?v=VjDCGBa5FzM"
   },
   {
     "name": "Business Health Innovation",
@@ -69,7 +77,8 @@
     "description": "Não remediar a saúde corporativa pode ser fatal. Vamos nos encontrar para discutir este assunto?",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "06 e 07 de maio"
+    "date": "06 e 07 de maio",
+    "link": "https://www.youtube.com/watch?v=z-DuoapCuNo"
   },
   {
     "name": "Retailed! IT",
@@ -77,7 +86,8 @@
     "description": "Varejo ágil: sua operação está pronta para inovar?",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "13, 14 e 15 de maio"
+    "date": "13, 14 e 15 de maio",
+    "link": "https://www.youtube.com/watch?v=vEyczrIJm9E"
   },
   {
     "name": "Data Governance",
@@ -85,7 +95,8 @@
     "description": "Organize seus dados: faça isso e impulsione o seu negócio.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "03 e 04 de junho"
+    "date": "03 e 04 de junho",
+    "link": "https://www.youtube.com/watch?v=6QyVNDEmk-4"
   },
   {
     "name": "Consumer Credit Trends",
@@ -93,7 +104,8 @@
     "description": "O que líderes de crédito e cobrança estão fazendo para reduzir a burocracia e aumentar a produtividade.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "03 e 04 de junho"
+    "date": "03 e 04 de junho",
+    "link": "https://www.youtube.com/watch?v=QcXV8pwVmGM"
   },
   {
     "name": "CFO",
@@ -101,7 +113,8 @@
     "description": "Vamos debater como ser mais estratégico sem deixar de lado o EBITDA.",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "17, 18 e 19 de junho"
+    "date": "17, 18 e 19 de junho",
+    "link": "https://www.youtube.com/watch?v=wQAbf_Xlo8g"
   },
   {
     "name": "CIO",
@@ -109,7 +122,8 @@
     "description": "O poder de transformar operações e reduzir custos, você está fazendo isso em sua empresa?",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "17, 18 e 19 de junho"
+    "date": "17, 18 e 19 de junho",
+    "link": "https://www.youtube.com/watch?v=CgCz41PFQxM"
   },
   {
     "name": "Marketing Innovation",
@@ -117,7 +131,8 @@
     "description": "Marketing e Tecnologia: como construir estratégias consistentes que atenderão o negócio?",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "24 e 25 de junho"
+    "date": "24 e 25 de junho",
+    "link": "https://www.youtube.com/watch?v=ZlNnYS4GPAI"
   },
   {
     "name": "Corporate Education",
@@ -125,7 +140,8 @@
     "description": "Qual a nova corrida pelo conhecimento? E como isso pode trazer resultados para a corporação?",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "15 e 16 de julho"
+    "date": "15 e 16 de julho",
+    "link": "https://www.youtube.com/watch?v=x5WRL7UMt_E&t=1s"
   },
   {
     "name": "Communication",
@@ -133,7 +149,8 @@
     "description": "Reinvente seus processos internos para uma melhor comunicação.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "22 e 23 de julho"
+    "date": "22 e 23 de julho",
+    "link": "https://www.youtube.com/watch?v=w7VpT0jf3T8"
   },
   {
     "name": "HR Rewards",
@@ -141,7 +158,8 @@
     "description": "Gestão de benefícios: saiba porque cuidar dos seus colaboradores incrementa receita!",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "29 e 30 de julho"
+    "date": "29 e 30 de julho",
+    "link": "https://www.youtube.com/watch?v=gHMqpQzf1B0"
   },
   {
     "name": "Retailed! FS",
@@ -149,7 +167,8 @@
     "description": "Desafios de construir receita por meio de produtos e serviços financeiros do varejo.",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "12, 13 e 14 de agosto"
+    "date": "12, 13 e 14 de agosto",
+    "link": "https://www.youtube.com/watch?v=V3uQmxHizbg"
   },
   {
     "name": "CEO",
@@ -157,7 +176,8 @@
     "description": "Como aprimorar seus soft e hard skills para alcançar objetivos.",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "19, 20 e 21 de agosto"
+    "date": "19, 20 e 21 de agosto",
+    "link": "https://www.youtube.com/watch?v=ducE-zwnTYo"
   },
   {
     "name": "Developing Organizational Culture",
@@ -165,7 +185,8 @@
     "description": "Fortaleça sua cultura e garanta o futuro da organização!",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "09 e 10 de setembro"
+    "date": "09 e 10 de setembro",
+    "link": "https://www.youtube.com/watch?v=xBAy4PmRKcU"
   },
   {
     "name": "Shared Services Starters",
@@ -173,7 +194,8 @@
     "description": "Estratégias para implementação e manutenção dos CSCs que ainda estão nos primeiros anos.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "16 e 17 de setembro"
+    "date": "16 e 17 de setembro",
+    "link": "https://www.youtube.com/watch?v=Mku5ViSt5m0"
   },
   {
     "name": "Industry Tech Innovation",
@@ -181,7 +203,8 @@
     "description": "Inovação industrial e manufatura 4.0!",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "16 e 17 de setembro"
+    "date": "16 e 17 de setembro",
+    "link": ""
   },
   {
     "name": "Corporate Health Innovation",
@@ -189,7 +212,8 @@
     "description": "Redução de custos, bem-estar dos funcionários e inovação de processos.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "30 de setembro e 01 de outubro"
+    "date": "30 de setembro e 01 de outubro",
+    "link": "https://www.youtube.com/watch?v=gI56-LAMafM"
   },
   {
     "name": "CMO",
@@ -197,7 +221,8 @@
     "description": "Novas tecnologias e mudanças comportamentais da jornada do CMO.",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "14, 15 e 16 de outubro"
+    "date": "14, 15 e 16 de outubro",
+    "link": "https://www.youtube.com/watch?v=T7qCpPSWArM"
   },
   {
     "name": "The HR Trends",
@@ -205,7 +230,8 @@
     "description": "Se você almeja ser o melhor RH, esqueça ser estratégico, apenas seja o diferencial e faça acontecer.",
     "projectType": 2,
     "place": "São Paulo",
-    "date": "14, 15 e 16 de outubro"
+    "date": "14, 15 e 16 de outubro",
+    "link": "https://www.youtube.com/watch?v=Qf7ipkxnBNs"
   },
   {
     "name": "Process Innovation",
@@ -213,7 +239,8 @@
     "description": "Qualidade vs Agilidade: como gerir processos em tempo de transformação?",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "04 e 05 de novembro"
+    "date": "04 e 05 de novembro",
+    "link": "https://www.youtube.com/watch?v=24Ptue4cryo"
   },
   {
     "name": "Key People & Analytics",
@@ -221,7 +248,8 @@
     "description": "Os desafios de desenvolver carreiras por meio do uso de tecnologia e dados.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "04 e 05 de novembro"
+    "date": "04 e 05 de novembro",
+    "link": "https://www.youtube.com/watch?v=RV5ddp_9-jQ"
   },
   {
     "name": "Risk & Compliance Trends",
@@ -229,6 +257,7 @@
     "description": "Legislações e normas, riscos, tecnologias, responsabilização administrativa e civil, segurança de dados e LGPD.",
     "projectType": 1,
     "place": "São Paulo",
-    "date": "25 e 26 de novembro"
+    "date": "25 e 26 de novembro",
+    "link": ""
   }
 ]
