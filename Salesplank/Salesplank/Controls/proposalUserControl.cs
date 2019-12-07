@@ -233,8 +233,8 @@ namespace Salesplank.Controls
                     pageNum++;
                 }
                 AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{ContrapartidasAdicionaisPath}", null, formDataInput);
-                pageNum++;
-                AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{ContraCapaPath}");
+                //pageNum++;
+                //AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{ContraCapaPath}");
 
                 var proposalPath =
                     $"{DesktopPath}/Propostas/Proposta - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx";
@@ -259,7 +259,7 @@ namespace Salesplank.Controls
                 AddSlideWithImage(pptPresentation, slides, 6, textLayout, $"{WorkingDir}/Images/projects/made2make/modelo_made2make.jpg");
                 AddSlideWithImage(pptPresentation, slides, 7, textLayout, $"{WorkingDir}/Images/projects/made2make/sua_proposta.jpg");
                 AddSlideWithImage(pptPresentation, slides, 8, textLayout, $"{WorkingDir}/Images/projects/made2make/contrapartidas_investimento.jpg", null, formDataInput);
-                AddSlideWithImage(pptPresentation, slides, 9, textLayout, $"{WorkingDir}/Images/projects/made2make/contra_capa.jpg");
+                //AddSlideWithImage(pptPresentation, slides, 9, textLayout, $"{WorkingDir}/Images/projects/made2make/contra_capa.jpg");
 
                 var proposalPath =
                     $"{DesktopPath}/Propostas/Proposta Made2Make - {formDataInput.SponsorName} - {DateTime.Now.Day}-{DateTime.Now.Month}-{DateTime.Now.Year}.pptx";

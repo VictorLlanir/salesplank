@@ -55,7 +55,7 @@
     "actionType": 2
   },
   {
-    "name": "Happy Hour",
+    "name": "Jantar",
     "image": "actions/relationship/jantar.jpg",
     "actionType": 2
   },
@@ -126,7 +126,7 @@
   },
   {
     "name": "Oferecimento de Coquetel",
-    "image": "actions/branding/oferecimente_de_coquetel.jpg",
+    "image": "actions/branding/oferecimento_de_coquetel.jpg",
     "actionType": 3
   },
   {
