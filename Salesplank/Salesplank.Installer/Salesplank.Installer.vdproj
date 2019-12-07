@@ -33,12 +33,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_14043967BF6D47D891707E6CE3495939"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_1749D76CB2D54E6293F812E23482D183"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -112,12 +106,6 @@
         "Entry"
         {
         "MsmKey" = "8:_4294610B1DE643B7B66756D5E30510C2"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_44FEE9B4E9E7469F8F4304A37BDA9279"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -214,6 +202,12 @@
         "Entry"
         {
         "MsmKey" = "8:_6377D0BC34014FF7AEBC3394C9E41DF3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6E3BDB664A574A6FA5AF9CE394BB514C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -471,6 +465,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_EE5D101888D24F04B3175539B93EE902"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F4DD1C8408FD4D40BEEE698490C43555"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -656,26 +656,6 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_14043967BF6D47D891707E6CE3495939"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\Desktop\\Effra_Std_Lt.ttf"
-            "TargetName" = "8:Effra_Std_Lt.ttf"
-            "Tag" = "8:"
-            "Folder" = "8:_8B9622757FD349D2BE4DE80E3D74E09F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:5"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
@@ -916,26 +896,6 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44FEE9B4E9E7469F8F4304A37BDA9279"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\Desktop\\Effra_Std_Rg.ttf"
-            "TargetName" = "8:Effra_Std_Rg.ttf"
-            "Tag" = "8:"
-            "Folder" = "8:_8B9622757FD349D2BE4DE80E3D74E09F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:5"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
@@ -1256,6 +1216,26 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6E3BDB664A574A6FA5AF9CE394BB514C"
+            {
+            "SourcePath" = "8:..\\stuff\\Effra_Std_Rg.ttf"
+            "TargetName" = "8:Effra_Std_Rg.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_8B9622757FD349D2BE4DE80E3D74E09F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
@@ -2100,6 +2080,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EE5D101888D24F04B3175539B93EE902"
+            {
+            "SourcePath" = "8:..\\stuff\\Effra_Std_Lt.ttf"
+            "TargetName" = "8:Effra_Std_Lt.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_8B9622757FD349D2BE4DE80E3D74E09F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F4DD1C8408FD4D40BEEE698490C43555"
             {
             "SourcePath" = "8:..\\Salesplank\\bin\\Debug\\Images\\modelo_brain.jpg"
@@ -2498,7 +2498,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D75FDE752E744C219012C2B7441C55CE"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_13C5FD86EF3449C0AB15D7CBAF5E178C"
             {
             "Name" = "8:Salesplank"
             "Arguments" = "8:"
@@ -2506,9 +2506,9 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_29E03023821D4D878EC0FF1594D23F38"
+            "Target" = "8:_6377D0BC34014FF7AEBC3394C9E41DF3"
             "Folder" = "8:_46436313756D4528B64724B696E1E8DA"
-            "WorkingFolder" = "8:_383BAFCE225D40D2BD9417F3E7A64F61"
+            "WorkingFolder" = "8:_391557580AF44BF2831390156802980E"
             "Icon" = "8:"
             "Feature" = "8:"
             }
@@ -2913,7 +2913,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_29E03023821D4D878EC0FF1594D23F38"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\Salesplank\\obj\\Debug\\Salesplank.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_383BAFCE225D40D2BD9417F3E7A64F61"
