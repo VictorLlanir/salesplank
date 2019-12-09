@@ -141,12 +141,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_36F4F6DA0FF54D8FB7F669484EF1A9DB"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_37603D30F2A54C9AB7BA5505B154425B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -244,6 +238,12 @@
         "Entry"
         {
         "MsmKey" = "8:_7615BFC3A92C473D9AA94D3CBD82AD1D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_777B9D9B6B034D91992267B9FC7E5C3F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1088,26 +1088,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_36F4F6DA0FF54D8FB7F669484EF1A9DB"
-            {
-            "SourcePath" = "8:..\\Salesplank\\Images\\contrapartidas_adicionais.jpg"
-            "TargetName" = "8:contrapartidas_adicionais.jpg"
-            "Tag" = "8:"
-            "Folder" = "8:_391557580AF44BF2831390156802980E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_37603D30F2A54C9AB7BA5505B154425B"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\o_que_nao_somos.jpg"
@@ -1445,6 +1425,26 @@
             "TargetName" = "8:business_innovation.jpg"
             "Tag" = "8:"
             "Folder" = "8:_F46FD4019CE84AF09E4DE375D8BAF85E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_777B9D9B6B034D91992267B9FC7E5C3F"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\contrapartidas_adicionais.jpg"
+            "TargetName" = "8:contrapartidas_adicionais.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_391557580AF44BF2831390156802980E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2589,15 +2589,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Salesplank"
-        "ProductCode" = "8:{C867E745-1824-4810-92DF-CCF553BC9A61}"
-        "PackageCode" = "8:{78C0FA2B-AB4F-4492-8A8A-69A18455BDF6}"
+        "ProductCode" = "8:{4E81FB98-1DFA-4B67-8A25-F92A119256F5}"
+        "PackageCode" = "8:{533AF214-15CA-4CE5-910B-3473C18C8BB7}"
         "UpgradeCode" = "8:{62B524D6-DEB2-4082-9DD7-760AF48FA69C}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.0.3"
         "Manufacturer" = "8:EbdiSoftware"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -2710,7 +2710,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F6DF0972E2F64C41A140DF25A25EBF36"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_386E7314A9484EE1883631192C2C43D5"
             {
             "Name" = "8:Salesplank"
             "Arguments" = "8:"
