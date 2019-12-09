@@ -42,6 +42,7 @@ namespace Salesplank.Controls
             PopulateProjectList();
             PopulateActionList();
             Directory.CreateDirectory($"{DesktopPath}/Propostas");
+            ckbGenerateEmail.Visible = false;
         }
         // Eventos
         private void rdbSabBrainInteracivity_CheckedChanged(object sender, EventArgs e)
