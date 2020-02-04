@@ -21,13 +21,31 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_00D66D89D22840629DA9441806E362BF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_0430DCE368CB4A84A1B0682A9BBAA781"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_075CEC8A170246209FBA273D7679780C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_0BD0E5DA3B174A58977903C8D7AF2784"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0BDF38493F074CBD8350873366285D17"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -46,6 +64,12 @@
         "Entry"
         {
         "MsmKey" = "8:_0DF15DDFF94742FDA40F17963DFFC53A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_10E145BACF854700966B68787CDF7F04"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -141,6 +165,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_305485BF52C34D2AA19B9A23730FC64E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_34EAA186402B4A138A4CBBC24103B896"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_36A0D993DACD4274872AA5FFA3EA807D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_37603D30F2A54C9AB7BA5505B154425B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -153,6 +195,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_3CDEA602F8E5472985CE185419B66919"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3D158C82A3C946E1957DCD66F511740A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -160,6 +208,12 @@
         "Entry"
         {
         "MsmKey" = "8:_42C44AEDD0F840028887B5542924AD07"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_45415CEFAFE64EF1AABA28BFE033B373"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -201,7 +255,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_5BE20028942A409ABF4F24526607D34D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5EC13C82DB8947CBB586A472D0BEFDF5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_613175C161DD4D9FB1E8D38713F2CD7D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_621BBA21052C4A91BEA653C7EE9507C0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -231,7 +303,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6CE33AC912E6420F9BD816C63FBFCBD8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6E3BDB664A574A6FA5AF9CE394BB514C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7007B9F0CCB24052BD89F8DBFDFCC863"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_72E095758F7A455C88260869881D8BD5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -273,7 +363,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_7D99C8D71F274E74A36CDCA910CDF215"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_7DDB8A67536B4CB3B9B2B6BC06C3A335"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8011BA38205A4E6887828F775EDC2315"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -309,6 +411,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_8D00CE3882744FF0AB46461173825644"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8DEC13CBFC5548D5BD71847A1F054935"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -328,6 +436,12 @@
         "Entry"
         {
         "MsmKey" = "8:_9192D82D0C8F431192AD565755ACCA31"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_92A59B3C1CCC401BA239E20CFDC43EC7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -357,7 +471,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_9C390051A0124A34A3A18B00E101DE82"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A200F2491AFC490FBB863AB9CE272CF3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A3E100BBE6074D6EA6DB8CDC41CCB7AA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -405,13 +531,25 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_BB23E0228C0C49ECA2F777A4798A6086"
+        "MsmKey" = "8:_BAB305A86CB640D99EB81F7ED5F77BAE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_BC7A4589C6ED4F0A999C876F49A0F7C6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C11D4A87F1574863A99EB6D7DB5BC1E0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C2A5915ADA4D48128C0CDED4EF26B74F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -424,6 +562,12 @@
         "Entry"
         {
         "MsmKey" = "8:_C63B12FC61CC41519A5B663D3186D3C8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C6C93D4AA713454788510312582AF4C9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -448,6 +592,18 @@
         "Entry"
         {
         "MsmKey" = "8:_CCCB940E196E4E129772E3A14D62CF00"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D326B4F663D348D4B530CE866D822755"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D5815789279F4769B4E03AB8D6B084C8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -483,6 +639,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_E56E1EC471D04FECBFDD37F142AACA1F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E69680043CBC045BA94997FEFA49BA17"
         "OwnerKey" = "8:_29E03023821D4D878EC0FF1594D23F38"
         "MsmSig" = "8:_UNDEFINED"
@@ -491,6 +653,12 @@
         {
         "MsmKey" = "8:_E7CFD498ACACDB53187E42FE91C8C52E"
         "OwnerKey" = "8:_29E03023821D4D878EC0FF1594D23F38"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E7E5BA0228414A01B716242FC7816299"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -507,13 +675,31 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_F0AB6EF0FCAE43F2A2CFF4D073D206DC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F1A122EF49D442FB88C8DBE2FCB634E2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_F4580F65015F47039C789C4A9AD83945"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F65D303EEE61485EBDD04C53AFE64DBF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F71F709BF6F04A4C8F5C8FACA8527EA1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -686,6 +872,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_00D66D89D22840629DA9441806E362BF"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\future_pay.JPG"
+            "TargetName" = "8:future_pay.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0430DCE368CB4A84A1B0682A9BBAA781"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\actions\\branding\\carregador_de_celular.jpg"
@@ -706,12 +912,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_075CEC8A170246209FBA273D7679780C"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\developing_organizational_culture.JPG"
+            "TargetName" = "8:developing_organizational_culture.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0BD0E5DA3B174A58977903C8D7AF2784"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\actions\\content\\plenaria.jpg"
             "TargetName" = "8:plenaria.jpg"
             "Tag" = "8:"
             "Folder" = "8:_DB8C76CA92A54BFABD034034642CD674"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0BDF38493F074CBD8350873366285D17"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\corporate_education.JPG"
+            "TargetName" = "8:corporate_education.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -772,6 +1018,26 @@
             "TargetName" = "8:almoco.jpg"
             "Tag" = "8:"
             "Folder" = "8:_4E828B4B4997427E839D62585945FC75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_10E145BACF854700966B68787CDF7F04"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\retailed_it.JPG"
+            "TargetName" = "8:retailed_it.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1088,6 +1354,66 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_305485BF52C34D2AA19B9A23730FC64E"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\data_analytics_innovation.JPG"
+            "TargetName" = "8:data_analytics_innovation.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_34EAA186402B4A138A4CBBC24103B896"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\shared_services.JPG"
+            "TargetName" = "8:shared_services.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_36A0D993DACD4274872AA5FFA3EA807D"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\hr_mind_move.JPG"
+            "TargetName" = "8:hr_mind_move.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_37603D30F2A54C9AB7BA5505B154425B"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\o_que_nao_somos.jpg"
@@ -1128,6 +1454,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3CDEA602F8E5472985CE185419B66919"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\the_hr_trends.JPG"
+            "TargetName" = "8:the_hr_trends.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3D158C82A3C946E1957DCD66F511740A"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\projects\\brain\\hr_rewards.jpg"
@@ -1154,6 +1500,26 @@
             "TargetName" = "8:cordao_cracha.jpg"
             "Tag" = "8:"
             "Folder" = "8:_302838A6DB5A4F4796B3CE68828C2A0C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_45415CEFAFE64EF1AABA28BFE033B373"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\shared_services_starters.JPG"
+            "TargetName" = "8:shared_services_starters.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1288,12 +1654,72 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5BE20028942A409ABF4F24526607D34D"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\human_resources.JPG"
+            "TargetName" = "8:human_resources.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5EC13C82DB8947CBB586A472D0BEFDF5"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\consumer_credit_trends.JPG"
+            "TargetName" = "8:consumer_credit_trends.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_613175C161DD4D9FB1E8D38713F2CD7D"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\projects\\brain\\data_governance.jpg"
             "TargetName" = "8:data_governance.jpg"
             "Tag" = "8:"
             "Folder" = "8:_F46FD4019CE84AF09E4DE375D8BAF85E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_621BBA21052C4A91BEA653C7EE9507C0"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\ceo.JPG"
+            "TargetName" = "8:ceo.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1399,6 +1825,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6CE33AC912E6420F9BD816C63FBFCBD8"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\xperience.JPG"
+            "TargetName" = "8:xperience.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6E3BDB664A574A6FA5AF9CE394BB514C"
             {
             "SourcePath" = "8:..\\stuff\\Effra_Std_Rg.ttf"
@@ -1415,6 +1861,46 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7007B9F0CCB24052BD89F8DBFDFCC863"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\cio.JPG"
+            "TargetName" = "8:cio.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_72E095758F7A455C88260869881D8BD5"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\cfo.JPG"
+            "TargetName" = "8:cfo.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
@@ -1539,12 +2025,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7D99C8D71F274E74A36CDCA910CDF215"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\key_people_analytics.JPG"
+            "TargetName" = "8:key_people_analytics.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7DDB8A67536B4CB3B9B2B6BC06C3A335"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\actions\\branding\\exposicao_eletronica.jpg"
             "TargetName" = "8:exposicao_eletronica.jpg"
             "Tag" = "8:"
             "Folder" = "8:_302838A6DB5A4F4796B3CE68828C2A0C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8011BA38205A4E6887828F775EDC2315"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\risk_compliance.JPG"
+            "TargetName" = "8:risk_compliance.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1659,6 +2185,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8D00CE3882744FF0AB46461173825644"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\data_governance.JPG"
+            "TargetName" = "8:data_governance.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8DEC13CBFC5548D5BD71847A1F054935"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\projects\\sab\\cmo.jpg"
@@ -1725,6 +2271,26 @@
             "TargetName" = "8:presidencia.jpg"
             "Tag" = "8:"
             "Folder" = "8:_DB8C76CA92A54BFABD034034642CD674"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_92A59B3C1CCC401BA239E20CFDC43EC7"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\process_innovation.JPG"
+            "TargetName" = "8:process_innovation.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1819,12 +2385,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9C390051A0124A34A3A18B00E101DE82"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\retailed_it.jpg"
+            "TargetName" = "8:retailed_it.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A200F2491AFC490FBB863AB9CE272CF3"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\projects\\brain\\process_innovation.jpg"
             "TargetName" = "8:process_innovation.jpg"
             "Tag" = "8:"
             "Folder" = "8:_F46FD4019CE84AF09E4DE375D8BAF85E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A3E100BBE6074D6EA6DB8CDC41CCB7AA"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\hr_rewards.JPG"
+            "TargetName" = "8:hr_rewards.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1979,12 +2585,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BB23E0228C0C49ECA2F777A4798A6086"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BAB305A86CB640D99EB81F7ED5F77BAE"
             {
-            "SourcePath" = "8:..\\Salesplank\\Data\\Projects.json"
-            "TargetName" = "8:Projects.json"
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\communication.JPG"
+            "TargetName" = "8:communication.JPG"
             "Tag" = "8:"
-            "Folder" = "8:_5CDB36D42964432681695185CCCDE169"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2005,6 +2611,46 @@
             "TargetName" = "8:coffee_break.jpg"
             "Tag" = "8:"
             "Folder" = "8:_4E828B4B4997427E839D62585945FC75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C11D4A87F1574863A99EB6D7DB5BC1E0"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\business_health_innovation.JPG"
+            "TargetName" = "8:business_health_innovation.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C2A5915ADA4D48128C0CDED4EF26B74F"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\corporate_health_innovation.JPG"
+            "TargetName" = "8:corporate_health_innovation.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2045,6 +2691,26 @@
             "TargetName" = "8:modelo_sab.jpg"
             "Tag" = "8:"
             "Folder" = "8:_391557580AF44BF2831390156802980E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C6C93D4AA713454788510312582AF4C9"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\business_tech_innovation.JPG"
+            "TargetName" = "8:business_tech_innovation.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2116,6 +2782,46 @@
             "TargetName" = "8:marketing_innovation.jpg"
             "Tag" = "8:"
             "Folder" = "8:_F46FD4019CE84AF09E4DE375D8BAF85E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D326B4F663D348D4B530CE866D822755"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\retailed_fs.JPG"
+            "TargetName" = "8:retailed_fs.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D5815789279F4769B4E03AB8D6B084C8"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\pmo_concept.JPG"
+            "TargetName" = "8:pmo_concept.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2230,6 +2936,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E56E1EC471D04FECBFDD37F142AACA1F"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Data\\Projects.json"
+            "TargetName" = "8:Projects.json"
+            "Tag" = "8:"
+            "Folder" = "8:_5CDB36D42964432681695185CCCDE169"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E69680043CBC045BA94997FEFA49BA17"
             {
             "AssemblyRegister" = "3:1"
@@ -2292,6 +3018,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E7E5BA0228414A01B716242FC7816299"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\marketing_innovation.JPG"
+            "TargetName" = "8:marketing_innovation.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EE5D101888D24F04B3175539B93EE902"
             {
             "SourcePath" = "8:..\\stuff\\Effra_Std_Lt.ttf"
@@ -2332,6 +3078,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F0AB6EF0FCAE43F2A2CFF4D073D206DC"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\sab\\cmo.JPG"
+            "TargetName" = "8:cmo.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_FF4D4A6993F648C389BAB8C88B35CCF7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F1A122EF49D442FB88C8DBE2FCB634E2"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\projects\\made2make\\modelo_made2make.jpg"
@@ -2352,12 +3118,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F4580F65015F47039C789C4A9AD83945"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\business_innovation.JPG"
+            "TargetName" = "8:business_innovation.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F65D303EEE61485EBDD04C53AFE64DBF"
             {
             "SourcePath" = "8:..\\Salesplank\\Images\\actions\\branding\\premium_gift_hbr.jpg"
             "TargetName" = "8:premium_gift_hbr.jpg"
             "Tag" = "8:"
             "Folder" = "8:_302838A6DB5A4F4796B3CE68828C2A0C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F71F709BF6F04A4C8F5C8FACA8527EA1"
+            {
+            "SourcePath" = "8:..\\Salesplank\\Images\\reports\\brain\\customer_after_sales_services.JPG"
+            "TargetName" = "8:customer_after_sales_services.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_84A02B485AA04A18BD2A71C2456ABB75"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2525,6 +3331,39 @@
                                     }
                                 }
                             }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_A52C9ED861714EA0B5FE852933DCF2C3"
+                            {
+                            "Name" = "8:reports"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_43B814E7D7214D948982CA31C47DD964"
+                                "Folders"
+                                {
+                                    "{9EF0B969-E518-4E46-987F-47570745A589}:_84A02B485AA04A18BD2A71C2456ABB75"
+                                    {
+                                    "Name" = "8:brain"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "Condition" = "8:"
+                                    "Transitive" = "11:FALSE"
+                                    "Property" = "8:_3CEEAE1EA0174730AA2AF340E83474A0"
+                                        "Folders"
+                                        {
+                                        }
+                                    }
+                                    "{9EF0B969-E518-4E46-987F-47570745A589}:_FF4D4A6993F648C389BAB8C88B35CCF7"
+                                    {
+                                    "Name" = "8:sab"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "Condition" = "8:"
+                                    "Transitive" = "11:FALSE"
+                                    "Property" = "8:_96F4A4EED90F49EE8E0606D5B67CE0A7"
+                                        "Folders"
+                                        {
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_5CDB36D42964432681695185CCCDE169"
@@ -2589,15 +3428,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Salesplank"
-        "ProductCode" = "8:{4E81FB98-1DFA-4B67-8A25-F92A119256F5}"
-        "PackageCode" = "8:{533AF214-15CA-4CE5-910B-3473C18C8BB7}"
+        "ProductCode" = "8:{E97782AB-FE9C-424C-91DA-8F5C228089DF}"
+        "PackageCode" = "8:{18090722-AB13-43CF-B3BF-0C6213EC8E87}"
         "UpgradeCode" = "8:{62B524D6-DEB2-4082-9DD7-760AF48FA69C}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.3"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:EbdiSoftware"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -2737,7 +3576,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_AB69192725954992A76081E2E3F4CA11"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
+                    "DisplayName" = "8:Concluído"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
@@ -2793,7 +3632,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_AD64EA83CFDB4002A5D66380E92855F9"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
+                    "DisplayName" = "8:Progresso"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
@@ -2837,7 +3676,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2BF30D9ED991405EA9CA02A7E78D816D"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
+                    "DisplayName" = "8:Progresso"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
@@ -2881,7 +3720,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_58BAB3E799E3477FACD710049BF592F8"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "DisplayName" = "8:Pasta de Instalação"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
@@ -2903,7 +3742,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_6527B7505EFD4AC994CF585647D9A118"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
+                    "DisplayName" = "8:Confirmar Instalação"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
@@ -2925,7 +3764,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_87206583104A4D5784FB9F1E7F22B46F"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
+                    "DisplayName" = "8:Bem-vindo"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
@@ -2982,7 +3821,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_32F4012D65484F018B3FEEAE9CBA4483"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
+                    "DisplayName" = "8:Concluído"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
@@ -3013,7 +3852,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_29F5006A3D124FE78E27D151A49A9889"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "DisplayName" = "8:Pasta de Instalação"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
@@ -3048,7 +3887,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4D6DC5E1C8E14D508F412C5EBBC7281C"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
+                    "DisplayName" = "8:Confirmar Instalação"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
@@ -3070,7 +3909,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7068DB1CE8E54D22AEB9A895B91CB5E2"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
+                    "DisplayName" = "8:Bem-vindo"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"

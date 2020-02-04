@@ -5,10 +5,11 @@ namespace Salesplank.Entities
 {
     public class Project
     {
-        public Project(string name, string image, string description, EProjectType projectType, string place, string date, string link)
+        public Project(string name, string image, string report, string description, EProjectType projectType, string place, string date, string link)
         {
             Name = name;
             Image = image;
+            Report = report;
             Description = description;
             ProjectType = projectType;
             Place = place;
@@ -17,6 +18,7 @@ namespace Salesplank.Entities
         }
         public virtual string Name { get; private set; }
         public virtual string Image { get; private set; }
+        public virtual string Report { get; private set; }
         public virtual string Description { get; private set; }
         public virtual EProjectType ProjectType { get; private set; }
         public virtual string Place { get; private set; }

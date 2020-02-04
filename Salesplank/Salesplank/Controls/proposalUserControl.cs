@@ -227,6 +227,8 @@ namespace Salesplank.Controls
                 {
                     AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{project.Image}", project);
                     pageNum++;
+                    AddSlideWithImage(pptPresentation, slides, pageNum, textLayout, $"{WorkingDir}/Images/{project.Report}", project);
+                    pageNum++;
                 }
                 foreach (var action in actions)
                 {
@@ -285,6 +287,7 @@ namespace Salesplank.Controls
             bgSlide.Top = 0;
             bgSlide.Width = pptPresentation.PageSetup.SlideWidth;
             bgSlide.Height = pptPresentation.PageSetup.SlideHeight;
+            if (path.Contains("report")) return;
             if (project != null)
             {
                 var dateText = slide.Shapes.AddTextbox(MsoTextOrientation.msoTextOrientationHorizontal, 310, 260, 600, 100);

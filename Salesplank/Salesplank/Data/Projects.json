@@ -2,6 +2,7 @@
   {
     "name": "Xperience",
     "image": "projects/brain/xperience.jpg",
+    "report": "reports/brain/xperience.jpg",
     "description": "Conheça seu público e mantenha suas estratégias alinhadas para potencializar a experiência do cliente.",
     "projectType": 1,
     "place": "São Paulo",
@@ -11,6 +12,7 @@
   {
     "name": "HR Mind Move",
     "image": "projects/brain/hr_mind_move.jpg",
+    "report": "reports/brain/hr_mind_move.jpg",
     "description": "Como as experiências de aprendizagem impactam no resultado da sua companhia? Discuta a gestão do DHO.",
     "projectType": 1,
     "place": "São Paulo",
@@ -20,6 +22,7 @@
   {
     "name": "Data Analytics Innovation",
     "image": "projects/brain/data_analytics_innovation.jpg",
+    "report": "reports/brain/data_analytics_innovation.jpg",
     "description": "Potencialize suas estratégias através da inovação em dados!",
     "projectType": 1,
     "place": "São Paulo",
@@ -29,6 +32,7 @@
   {
     "name": "Future Pay",
     "image": "projects/brain/future_pay.jpg",
+    "report": "reports/brain/future_pay.jpg",
     "description": "O futuro dos meios de pagamento é agora. Você está pronto?",
     "projectType": 1,
     "place": "São Paulo",
@@ -38,6 +42,7 @@
   {
     "name": "Business Innovation",
     "image": "projects/brain/business_innovation.jpg",
+    "report": "reports/brain/business_innovation.jpg",
     "description": "Você sabe os impactos da inovação dentro da sua companhia? Vamos juntos nos tornar inovadores!",
     "projectType": 1,
     "place": "São Paulo",
@@ -47,6 +52,7 @@
   {
     "name": "Customer After Sales Services",
     "image": "projects/brain/customer_after_sales_services.jpg",
+    "report": "reports/brain/customer_after_sales_services.jpg",
     "description": "Estratégias para tornar a experiência no pós-venda tão agradável que garantirá fidelidade e propagação da sua marca.",
     "projectType": 1,
     "place": "São Paulo",
@@ -56,6 +62,7 @@
   {
     "name": "Shared Services",
     "image": "projects/sab/shared_services.jpg",
+    "report": "reports/sab/shared_services.jpg",
     "description": "Vamos falar sobre como continuar inovando com o seu CSC?",
     "projectType": 2,
     "place": "São Paulo",
@@ -65,6 +72,7 @@
   {
     "name": "Human Resources",
     "image": "projects/sab/human_resources.jpg",
+    "report": "reports/sab/human_resources.jpg",
     "description": "Quais os principais desafios dos gestores de Recursos Humanos?",
     "projectType": 2,
     "place": "São Paulo",
@@ -74,6 +82,7 @@
   {
     "name": "Business Health Innovation",
     "image": "projects/brain/business_health_innovation.jpg",
+    "report": "reports/brain/business_health_innovation.jpg",
     "description": "Não remediar a saúde corporativa pode ser fatal. Vamos nos encontrar para discutir este assunto?",
     "projectType": 1,
     "place": "São Paulo",
@@ -83,6 +92,7 @@
   {
     "name": "Retailed! IT",
     "image": "projects/sab/retailed_it.jpg",
+    "report": "reports/sab/retailed_it.jpg",
     "description": "Varejo ágil: sua operação está pronta para inovar?",
     "projectType": 2,
     "place": "São Paulo",
@@ -92,6 +102,7 @@
   {
     "name": "Data Governance",
     "image": "projects/brain/data_governance.jpg",
+    "report": "reports/brain/data_governance.jpg",
     "description": "Organize seus dados: faça isso e impulsione o seu negócio.",
     "projectType": 1,
     "place": "São Paulo",
@@ -101,6 +112,7 @@
   {
     "name": "Consumer Credit Trends",
     "image": "projects/brain/consumer_credit_trends.jpg",
+    "report": "reports/brain/consumer_credit_trends.jpg",
     "description": "O que líderes de crédito e cobrança estão fazendo para reduzir a burocracia e aumentar a produtividade.",
     "projectType": 1,
     "place": "São Paulo",
@@ -110,6 +122,7 @@
   {
     "name": "CFO",
     "image": "projects/sab/cfo.jpg",
+    "report": "reports/sab/cfo.jpg",
     "description": "Vamos debater como ser mais estratégico sem deixar de lado o EBITDA.",
     "projectType": 2,
     "place": "São Paulo",
@@ -119,6 +132,7 @@
   {
     "name": "CIO",
     "image": "projects/sab/cio.jpg",
+    "report": "reports/sab/cio.jpg",
     "description": "O poder de transformar operações e reduzir custos, você está fazendo isso em sua empresa?",
     "projectType": 2,
     "place": "São Paulo",
@@ -128,6 +142,7 @@
   {
     "name": "Marketing Innovation",
     "image": "projects/brain/marketing_innovation.jpg",
+    "report": "reports/brain/marketing_innovation.jpg",
     "description": "Marketing e Tecnologia: como construir estratégias consistentes que atenderão o negócio?",
     "projectType": 1,
     "place": "São Paulo",
@@ -137,6 +152,7 @@
   {
     "name": "Corporate Education",
     "image": "projects/brain/corporate_education.jpg",
+    "report": "reports/brain/corporate_education.jpg",
     "description": "Qual a nova corrida pelo conhecimento? E como isso pode trazer resultados para a corporação?",
     "projectType": 1,
     "place": "São Paulo",
@@ -146,6 +162,7 @@
   {
     "name": "Communication",
     "image": "projects/brain/communication.jpg",
+    "report": "reports/brain/communication.jpg",
     "description": "Reinvente seus processos internos para uma melhor comunicação.",
     "projectType": 1,
     "place": "São Paulo",
@@ -155,6 +172,7 @@
   {
     "name": "HR Rewards",
     "image": "projects/brain/hr_rewards.jpg",
+    "report": "reports/brain/hr_rewards.jpg",
     "description": "Gestão de benefícios: saiba porque cuidar dos seus colaboradores incrementa receita!",
     "projectType": 1,
     "place": "São Paulo",
@@ -164,6 +182,7 @@
   {
     "name": "Retailed! FS",
     "image": "projects/sab/retailed_fs.jpg",
+    "report": "reports/sab/retailed_fs.jpg",
     "description": "Desafios de construir receita por meio de produtos e serviços financeiros do varejo.",
     "projectType": 2,
     "place": "São Paulo",
@@ -173,6 +192,7 @@
   {
     "name": "CEO",
     "image": "projects/sab/ceo.jpg",
+    "report": "reports/sab/ceo.jpg",
     "description": "Como aprimorar seus soft e hard skills para alcançar objetivos.",
     "projectType": 2,
     "place": "São Paulo",
@@ -182,6 +202,7 @@
   {
     "name": "Developing Organizational Culture",
     "image": "projects/brain/developing_organizational_culture.jpg",
+    "report": "reports/brain/developing_organizational_culture.jpg",
     "description": "Fortaleça sua cultura e garanta o futuro da organização!",
     "projectType": 1,
     "place": "São Paulo",
@@ -191,6 +212,7 @@
   {
     "name": "Shared Services Starters",
     "image": "projects/brain/shared_services_starters.jpg",
+    "report": "reports/brain/shared_services_starters.jpg",
     "description": "Estratégias para implementação e manutenção dos CSCs que ainda estão nos primeiros anos.",
     "projectType": 1,
     "place": "São Paulo",
@@ -200,6 +222,7 @@
   {
     "name": "Industry Tech Innovation",
     "image": "projects/brain/industry_tech_innovation.jpg",
+    "report": "reports/brain/industry_tech_innovation.jpg",
     "description": "Inovação industrial e manufatura 4.0!",
     "projectType": 1,
     "place": "São Paulo",
@@ -209,6 +232,7 @@
   {
     "name": "Corporate Health Innovation",
     "image": "projects/brain/corporate_health_innovation.jpg",
+    "report": "reports/brain/corporate_health_innovation.jpg",
     "description": "Redução de custos, bem-estar dos funcionários e inovação de processos.",
     "projectType": 1,
     "place": "São Paulo",
@@ -218,6 +242,7 @@
   {
     "name": "CMO",
     "image": "projects/sab/cmo.jpg",
+    "report": "reports/sab/cmo.jpg",
     "description": "Novas tecnologias e mudanças comportamentais da jornada do CMO.",
     "projectType": 2,
     "place": "São Paulo",
@@ -227,6 +252,7 @@
   {
     "name": "The HR Trends",
     "image": "projects/sab/the_hr_trends.jpg",
+    "report": "reports/sab/the_hr_trends.jpg",
     "description": "Se você almeja ser o melhor RH, esqueça ser estratégico, apenas seja o diferencial e faça acontecer.",
     "projectType": 2,
     "place": "São Paulo",
@@ -236,6 +262,7 @@
   {
     "name": "Process Innovation",
     "image": "projects/brain/process_innovation.jpg",
+    "report": "reports/brain/process_innovation.jpg",
     "description": "Qualidade vs Agilidade: como gerir processos em tempo de transformação?",
     "projectType": 1,
     "place": "São Paulo",
@@ -245,6 +272,7 @@
   {
     "name": "Key People & Analytics",
     "image": "projects/brain/key_people_analytics.jpg",
+    "report": "reports/brain/key_people_analytics.jpg",
     "description": "Os desafios de desenvolver carreiras por meio do uso de tecnologia e dados.",
     "projectType": 1,
     "place": "São Paulo",
@@ -254,6 +282,7 @@
   {
     "name": "Risk & Compliance Trends",
     "image": "projects/brain/risk_compliance_trends.jpg",
+    "report": "reports/brain/risk_compliance_trends.jpg",
     "description": "Legislações e normas, riscos, tecnologias, responsabilização administrativa e civil, segurança de dados e LGPD.",
     "projectType": 1,
     "place": "São Paulo",
